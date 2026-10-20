@@ -1,0 +1,320 @@
+[
+    {
+        "timestamp": "2026-10-19T20:36:07",
+        "starting_clue": "TRAVEL",
+        "hidden_chain": [
+            "TRAVEL",
+            "AIRPLANE",
+            "PILOT",
+            "AIRPORT",
+            "RUNWAY"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 2,
+        "total_guesses": 5,
+        "correct_guesses": 4,
+        "wrong_guesses": 1,
+        "moves": [
+            {
+                "clue": "TRAVEL",
+                "chosen_word": "AIRPLANE",
+                "reason": "An airplane is one of the most common vehicles used for travel, making it the most direct association with the clue TRAVEL.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPLANE",
+                "chosen_word": "PILOT",
+                "reason": "A pilot is the person who flies an airplane, making it the most direct and common association with the clue.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "HELICOPTER",
+                "reason": "A pilot is a person who flies an aircraft, and a helicopter is one of the most direct examples of an aircraft a pilot operates.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "AIRPORT",
+                "reason": "A pilot flies aircraft, and airports are where pilots take off and land.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPORT",
+                "chosen_word": "RUNWAY",
+                "reason": "A runway is the paved strip at an airport where aircraft take off and land.",
+                "outcome": "chain_complete"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T20:45:38",
+        "starting_clue": "TRAVEL",
+        "hidden_chain": [
+            "TRAVEL",
+            "AIRPLANE",
+            "PILOT",
+            "AIRPORT",
+            "RUNWAY"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 2,
+        "total_guesses": 5,
+        "correct_guesses": 4,
+        "wrong_guesses": 1,
+        "moves": [
+            {
+                "clue": "TRAVEL",
+                "chosen_word": "AIRPLANE",
+                "reason": "An airplane is one of the most common modes of travel, so it is the most direct association with the clue TRAVEL.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPLANE",
+                "chosen_word": "PILOT",
+                "reason": "A pilot is the person who flies an airplane, making it the most direct association with the clue.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "HELICOPTER",
+                "reason": "A pilot is the person who flies an aircraft, and a helicopter is a common aircraft that pilots fly.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "AIRPORT",
+                "reason": "Pilots fly aircraft, and airports are the main place where they work, take off, and land.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPORT",
+                "chosen_word": "RUNWAY",
+                "reason": "A runway is the paved strip at an airport where airplanes take off and land.",
+                "outcome": "chain_complete"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T20:45:49",
+        "starting_clue": "TRAVEL",
+        "hidden_chain": [
+            "TRAVEL",
+            "AIRPLANE",
+            "PILOT",
+            "AIRPORT",
+            "RUNWAY"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 2,
+        "total_guesses": 5,
+        "correct_guesses": 4,
+        "wrong_guesses": 1,
+        "moves": [
+            {
+                "clue": "TRAVEL",
+                "chosen_word": "AIRPLANE",
+                "reason": "An airplane is one of the most common vehicles people use to travel long distances.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPLANE",
+                "chosen_word": "PILOT",
+                "reason": "A pilot is the person who flies an airplane, making it the most direct association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "HELICOPTER",
+                "reason": "A pilot is the person who flies a helicopter, making it the most direct link to the clue among the available words.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "AIRPORT",
+                "reason": "Pilots fly aircraft and work out of airports, making it the most natural everyday association with the clue.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPORT",
+                "chosen_word": "RUNWAY",
+                "reason": "A runway is the paved strip where aircraft take off and land at an airport.",
+                "outcome": "chain_complete"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T20:46:00",
+        "starting_clue": "TRAVEL",
+        "hidden_chain": [
+            "TRAVEL",
+            "AIRPLANE",
+            "PILOT",
+            "AIRPORT",
+            "RUNWAY"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 3,
+        "total_guesses": 4,
+        "correct_guesses": 4,
+        "wrong_guesses": 0,
+        "moves": [
+            {
+                "clue": "TRAVEL",
+                "chosen_word": "AIRPLANE",
+                "reason": "An airplane is one of the most common vehicles people use to travel long distances.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPLANE",
+                "chosen_word": "PILOT",
+                "reason": "A pilot is the person who flies an airplane, making it the most direct association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "AIRPORT",
+                "reason": "A pilot flies aircraft, and airports are where pilots take off and land.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPORT",
+                "chosen_word": "RUNWAY",
+                "reason": "A runway is the paved strip at an airport where airplanes take off and land.",
+                "outcome": "chain_complete"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T20:46:08",
+        "starting_clue": "TRAVEL",
+        "hidden_chain": [
+            "TRAVEL",
+            "AIRPLANE",
+            "PILOT",
+            "AIRPORT",
+            "RUNWAY"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 3,
+        "total_guesses": 4,
+        "correct_guesses": 4,
+        "wrong_guesses": 0,
+        "moves": [
+            {
+                "clue": "TRAVEL",
+                "chosen_word": "AIRPLANE",
+                "reason": "An airplane is one of the most common vehicles used for travel, especially over long distances.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPLANE",
+                "chosen_word": "PILOT",
+                "reason": "A pilot is the person who flies an airplane, making it the most direct and common association with the clue.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "AIRPORT",
+                "reason": "Pilots fly aircraft and work out of airports, which is the most common and direct association with the word pilot.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPORT",
+                "chosen_word": "RUNWAY",
+                "reason": "A runway is the paved strip where aircraft take off and land at an airport.",
+                "outcome": "chain_complete"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T20:46:22",
+        "starting_clue": "TRAVEL",
+        "hidden_chain": [
+            "TRAVEL",
+            "AIRPLANE",
+            "PILOT",
+            "AIRPORT",
+            "RUNWAY"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 2,
+        "total_guesses": 5,
+        "correct_guesses": 4,
+        "wrong_guesses": 1,
+        "moves": [
+            {
+                "clue": "TRAVEL",
+                "chosen_word": "AIRPLANE",
+                "reason": "An airplane is one of the most common modes of travel, so it is the most direct association with the clue TRAVEL.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPLANE",
+                "chosen_word": "PILOT",
+                "reason": "A pilot is the person who flies an airplane, making it the most direct association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "HELICOPTER",
+                "reason": "A pilot is the person who flies a helicopter, making it the most direct association among the available words.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "AIRPORT",
+                "reason": "A pilot flies aircraft, and airports are the main place pilots take off, land, and work.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPORT",
+                "chosen_word": "RUNWAY",
+                "reason": "A runway is the paved strip at an airport where airplanes take off and land.",
+                "outcome": "chain_complete"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T21:01:30",
+        "starting_clue": "TRAVEL",
+        "hidden_chain": [
+            "TRAVEL",
+            "AIRPLANE",
+            "PILOT",
+            "AIRPORT",
+            "RUNWAY"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 3,
+        "total_guesses": 4,
+        "correct_guesses": 4,
+        "wrong_guesses": 0,
+        "moves": [
+            {
+                "clue": "TRAVEL",
+                "chosen_word": "AIRPLANE",
+                "reason": "An airplane is a common vehicle for travel, making it the most direct association with the clue TRAVEL.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPLANE",
+                "chosen_word": "PILOT",
+                "reason": "A pilot is the person who flies an airplane, making it the most direct association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PILOT",
+                "chosen_word": "AIRPORT",
+                "reason": "A pilot flies aircraft, and airports are the main places where pilots take off and land.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "AIRPORT",
+                "chosen_word": "RUNWAY",
+                "reason": "A runway is a strip at an airport where airplanes take off and land.",
+                "outcome": "chain_complete"
+            }
+        ]
+    }
+]

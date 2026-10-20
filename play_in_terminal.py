@@ -1,18 +1,18 @@
 from connection_rules import create_new_game_state, get_current_clue, submit_guess
 
 board = [
-    "APPLE", "MOON", "COURT", "TURKEY",
-    "PIZZA", "BAT", "RAIN", "PARIS", 
-    "GLASS", "BASKETBALL", "ROSE", "SHARK",
-    "DESERT", "PIANO", "TIGER", "DRAGON"
+    "OCEAN", "PILOT", "SAND", "AIRPLANE",
+    "BEACH", "ENGINE", "WATER", "RUNWAY",
+    "DESERT", "CLOUD", "WAVE", "HELICOPTER",
+    "FISH", "WIND", "SHIP", "AIRPORT"
 ]
 
 hidden_chain = [
-    "SPORTS",
-    "BASKETBALL",
-    "COURT",
-    "PARIS",
-    "DRAGON"
+    "TRAVEL",
+    "AIRPLANE",
+    "PILOT",
+    "AIRPORT",
+    "RUNWAY"
 ]
 
 game_state = create_new_game_state(board, hidden_chain)

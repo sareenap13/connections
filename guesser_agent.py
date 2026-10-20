@@ -1,13 +1,17 @@
 from dotenv import load_dotenv
 from anthropic import Anthropic
+from openai import OpenAI
 import os
 import json
 
 load_dotenv()
 client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+MODEL = "claude-haiku-5-5"
+DEBUG = False
 
 def choose_next_word_with_llm(board_words, current_clue, used_words,
-                              wrong_guesses, lives_remaining):
+                              wrong_guesses, lives_remaining, guesser_model = MODEL):
     available_words = []
     for word in board_words:
         if word not in used_words and word not in wrong_guesses:
@@ -49,24 +53,64 @@ def choose_next_word_with_llm(board_words, current_clue, used_words,
     natural, commonly understood connection.
 
     Return only the required JSON."""
-    
-    response = client.messages.create(
-        model = "claude-haiku-5-5",
-        max_tokens = 1024,
-        system = system_prompt,
-        messages = [
-            {"role": "user", "content": user_prompt}
-        ]
-    )
-    print("STOP REASON:", response.stop_reason)
-    print("OUTPUT TOKENS:", response.usage.output_tokens)
-    text_blocks = [block for block in response.content if block.type == "text"]
-    response_text = text_blocks[0].text if text_blocks else ""
-    print("RAW CLAUDE RESPONSE:", repr(response_text))
+
+    if guesser_model.startswith("claude"):
+        response = client.messages.create(
+            model = guesser_model,
+            max_tokens = 1024,
+            system = system_prompt,
+            messages = [
+                {"role": "user", "content": user_prompt}
+            ]
+        )
+
+        response_text = "".join(
+            block.text for block in response.content
+            if block.type == "text"
+        )
+
+        if DEBUG:
+            print("STOP REASON:", response.stop_reason)
+            print("OUTPUT TOKENS:", response.usage.output_tokens)
+            print("RAW CLAUDE RESPONSE:", repr(response_text))
+
+    elif guesser_model.startswith("gpt"):
+        response = openai_client.responses.create(
+            model=guesser_model,
+            input=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ]
+        )
+
+        response_text = response.output_text
+
+        if DEBUG:
+            print("RAW GPT RESPONSE:", repr(response_text))
+
+    else:
+        raise ValueError(f"Unsupported guesser model: {guesser_model}")
     
     try:
-        parsed_response = json.loads(response_text)
-    except json.JSONDecodeError:
+        response_text = response_text.strip()
+
+        if response_text.startswith("```"):
+            lines = response_text.splitlines()
+
+            if lines and lines[0].startswith("```"):
+                lines = lines[1:]
+
+            if lines and lines[-1].strip() == "```":
+                lines = lines[:-1]
+
+            response_text = "\n".join(lines).strip()
+
+        parsed_response, _ = json.JSONDecoder().raw_decode(response_text)
+
+        if not isinstance(parsed_response, dict):
+            raise ValueError("Response JSON must be an object.")
+
+    except (json.JSONDecodeError, ValueError):
         return {
             "chosen_word": None,
             "reason_for_connection": "Parsing of the response failed."

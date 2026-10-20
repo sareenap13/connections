@@ -1,28 +1,10 @@
 from connection_rules import create_new_game_state, get_current_clue, submit_guess
-from guesser_agent import choose_next_word_with_llm
-import json
-import os
+from guesser_agent import choose_next_word_with_llm, MODEL
 from datetime import datetime
 from word_pool import word_pool
-from board_builder import create_board
+from board_builder import create_board_around_fixed_chain
 
-def save_game_result(game_result):
-    filename = "game_results.json"
-
-    if os.path.exists(filename):
-        with open(filename, "r") as file:
-            results = json.load(file)
-    else:
-        results = []
-
-    results.append(game_result)
-
-    with open(filename, "w") as file:
-        json.dump(results, file, indent=4)
-
-    print("Game results saved to", filename)
-
-def play_one_agent_game(board_words, hidden_chain):
+def play_one_agent_game(board_words, hidden_chain, guesser_model):
     game_state = create_new_game_state(board_words, hidden_chain)
     max_turns = 20
     turn_count = 0
@@ -33,7 +15,7 @@ def play_one_agent_game(board_words, hidden_chain):
         current_clue = get_current_clue(game_state)
         agent_response = choose_next_word_with_llm(board_words, current_clue,
                     game_state["used_words"], wrong_guesses,
-                    game_state["lives_remaining"])
+                    game_state["lives_remaining"], guesser_model = guesser_model)
 
         chosen_word = agent_response["chosen_word"]
         reason_for_connection = agent_response["reason_for_connection"]
@@ -46,10 +28,10 @@ def play_one_agent_game(board_words, hidden_chain):
                 "reason": reason_for_connection,
                 "outcome": "agent_response_failed"
             })
-            break
+            continue
         
         outcome = submit_guess(game_state, chosen_word)
-        if outcome == "wrong":
+        if outcome in ["wrong", "out_of_lives"]:
             wrong_guesses.append(chosen_word)
         moves.append({
                         "clue": current_clue,
@@ -62,13 +44,16 @@ def play_one_agent_game(board_words, hidden_chain):
         print("Reason: ", reason_for_connection)
         print("Outcome: ", outcome)
 
+    
     if game_state["is_game_over"] is True:
         if game_state["lives_remaining"] == 0:
             final_result = "out_of_lives"
         else:
             final_result = "chain_complete"
-    else:
+    elif turn_count >= max_turns:
         final_result = "turn_limit_reached"
+    else:
+        final_result = "agent_response_failed"
     
     print("Final result: ", final_result)
     print("Hidden chain: ", hidden_chain)
@@ -99,8 +84,6 @@ def play_one_agent_game(board_words, hidden_chain):
         "moves": moves
     }
 
-    save_game_result(game_result)
-
     return game_result
 
 if __name__ == "__main__":
@@ -112,9 +95,9 @@ if __name__ == "__main__":
         "RUNWAY"
     ]
 
-    board = create_board(hidden_chain, word_pool)
+    board = create_board_around_fixed_chain(hidden_chain, word_pool)
 
     print("Generated board:", board)
     print("Number of board words:", len(board))
 
-    play_one_agent_game(board, hidden_chain)
+    play_one_agent_game(board, hidden_chain, MODEL)

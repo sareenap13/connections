@@ -238,6 +238,112 @@ def create_hidden_chain_with_llm(board_words, strategy_notes = ""):
 
     return None, last_failure_reason
 
+def update_setter_strategy_notes(current_strategy_notes, paired_game_summaries):
+    system_prompt = """
+    You improve the strategy notes of a setter in a word-association game.
+    The setter builds chains on a new random board every game, so the notes
+    must help on boards it has never seen.
+
+    Review the paired guesser's game outcomes, including what it guessed
+    instead at each missed link and why.
+
+    Guidelines:
+    - Base every lesson on the game evidence provided. Do not claim a link
+      caused a failure unless the evidence supports that conclusion.
+    - A completed chain shows what may work, and a failed chain shows what
+      to investigate. Neither proves every link in it was strong or weak.
+    - Look closely at missed links. When the guesser picked another word,
+      consider why that word seemed like a better fit.
+    - Distinguish links that were attempted and missed from links
+      the guesser never reached.
+    - Do not treat an unreached link as evidence that the association
+      itself was difficult.
+    - Distinguish a reasonable alternative guess from evidence that
+      the intended association was genuinely ambiguous.
+    - Write general principles, not lists of past chains. Use at most two
+      short examples, only when they clarify a principle.
+    - Keep useful existing notes and refine them. Mark lessons drawn from
+      a single game as tentative.
+    - Prefer common, direct, unambiguous associations.
+    - Keep the notes to 150 words or fewer.
+
+    Return only valid JSON with exactly this field:
+    {
+        "updated_strategy_notes": "Your revised strategy notes"
+    }
+    """
+
+    user_prompt = f"""
+    Current strategy notes:
+    {current_strategy_notes or "No strategy notes yet."}
+
+    Paired guesser game summaries:
+    {json.dumps(paired_game_summaries, indent=2)}
+
+    Update the strategy notes based on this evidence.
+    Return only the required JSON object.
+    """
+
+    try:
+        response = client.messages.create(
+            model = MODEL,
+            max_tokens = 700,
+            thinking = {"type": "disabled"},
+            system = system_prompt,
+            messages = [
+                {
+                    "role": "user",
+                    "content": user_prompt,
+                }
+            ]
+        )
+
+        response_text = "".join(
+            block.text
+            for block in response.content
+            if block.type == "text"
+        ).strip()
+
+        # Remove Markdown code fences if the model includes them.
+        if response_text.startswith("```"):
+            lines = response_text.splitlines()
+
+            if lines and lines[0].startswith("```"):
+                lines = lines[1:]
+
+            if lines and lines[-1].strip() == "```":
+                lines = lines[:-1]
+
+            response_text = "\n".join(lines).strip()
+
+        # parse first JSON object in the response
+        decoder = json.JSONDecoder()
+        data, end_position = decoder.raw_decode(response_text)
+
+        if not isinstance(data, dict):
+            raise ValueError("Reflection response must be a JSON object.")
+
+        updated_notes = data.get("updated_strategy_notes")
+
+        if not isinstance(updated_notes, str) or not updated_notes.strip():
+            raise ValueError(
+                "Reflection returned empty or invalid strategy notes."
+            )
+
+        updated_notes = updated_notes.strip()
+
+        if len(updated_notes.split()) > 150:
+            raise ValueError(
+                "Reflection exceeded the 150-word limit."
+            )
+
+        return updated_notes
+
+    except Exception as error:
+        print(f"Strategy reflection failed: {error}")
+        print("Keeping the previous strategy notes.")
+        return current_strategy_notes
+
 
 if __name__ == "__main__":
     for batch_id in range(1, 6):

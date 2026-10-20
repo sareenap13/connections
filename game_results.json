@@ -316,5 +316,569 @@
                 "outcome": "chain_complete"
             }
         ]
+    },
+    {
+        "timestamp": "2026-10-19T22:01:51",
+        "starting_clue": "ICE",
+        "hidden_chain": [
+            "ICE",
+            "PENGUIN",
+            "HORSE",
+            "WHEEL",
+            "STAR"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 4,
+        "correct_guesses": 1,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "ICE",
+                "chosen_word": "PENGUIN",
+                "reason": "Penguins are strongly associated with icy Antarctic habitats, making them the most natural link to ice.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PENGUIN",
+                "chosen_word": "COOKIE",
+                "reason": "Penguin is a well-known chocolate biscuit (cookie) brand.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "PENGUIN",
+                "chosen_word": "CROWN",
+                "reason": "Some penguin species, such as the crested and king penguins, have crown-like markings or crests on their heads.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "PENGUIN",
+                "chosen_word": "KNIGHT",
+                "reason": "Penguin is a Batman villain, and Batman is known as the Dark Knight.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T22:02:01",
+        "starting_clue": "GLASS",
+        "hidden_chain": [
+            "GLASS",
+            "BOTTLE",
+            "MILK",
+            "HEART",
+            "TIGER"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 5,
+        "correct_guesses": 2,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "GLASS",
+                "chosen_word": "MIRROR",
+                "reason": "A mirror is a glass object with a reflective coating, so it is the most direct association with glass.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "GLASS",
+                "chosen_word": "SPY",
+                "reason": "A spyglass is a small telescope, so SPY forms a direct compound word with GLASS.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "GLASS",
+                "chosen_word": "BOTTLE",
+                "reason": "A bottle is commonly made of glass, making it the most direct association with the clue.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "BOTTLE",
+                "chosen_word": "MILK",
+                "reason": "Milk is commonly sold and stored in a bottle, so the association is direct and everyday.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "MILK",
+                "chosen_word": "TIGER",
+                "reason": "Tigers are mammals that produce milk for their cubs, and 'Tiger's Milk' is also a well-known snack bar brand.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T22:31:38",
+        "starting_clue": "SKY",
+        "hidden_chain": [
+            "SKY",
+            "STAR",
+            "MOON",
+            "ROCKET",
+            "BELL"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 6,
+        "correct_guesses": 3,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "SKY",
+                "chosen_word": "STAR",
+                "reason": "Stars are the most direct thing one sees in the sky at night, so STAR is the strongest natural association with SKY.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "STAR",
+                "chosen_word": "MOON",
+                "reason": "The Moon and a star are both celestial bodies seen in the night sky, the most direct natural pairing among the options.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "MOON",
+                "chosen_word": "ROCKET",
+                "reason": "Rockets are how humans travel to the Moon, so the word is directly tied to the Moon.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "ROCKET",
+                "chosen_word": "PEPPER",
+                "reason": "Rocket is a peppery salad leaf (arugula), and pepper is commonly used to season it.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "ROCKET",
+                "chosen_word": "AMAZON",
+                "reason": "Amazon's founder, Jeff Bezos, also founded the rocket company Blue Origin, so the link to rockets is the most direct of the available words.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "ROCKET",
+                "chosen_word": "LEMON",
+                "reason": "Rocket is a peppery salad green that is commonly dressed with lemon juice, so the two are closely linked in cooking.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T22:31:54",
+        "starting_clue": "GAME",
+        "hidden_chain": [
+            "GAME",
+            "CHESS",
+            "KEY",
+            "PIANO",
+            "BELL"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 4,
+        "correct_guesses": 1,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "GAME",
+                "chosen_word": "CHESS",
+                "reason": "Chess is a classic board game, making it the most direct association with the clue GAME.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "CHESS",
+                "chosen_word": "CROWN",
+                "reason": "The crown is a symbol of the king, the most important piece in chess, so it is the most direct association with the game.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "CHESS",
+                "chosen_word": "CLOCK",
+                "reason": "Chess games are timed with a chess clock, a common piece of tournament equipment.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "CHESS",
+                "chosen_word": "PIANO",
+                "reason": "A piano's alternating black and white keys mirror the black and white squares of a chessboard.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T22:33:34",
+        "starting_clue": "TREASURE",
+        "hidden_chain": [
+            "TREASURE",
+            "MAP",
+            "PYRAMID",
+            "CASTLE",
+            "BELL"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 6,
+        "correct_guesses": 3,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "TREASURE",
+                "chosen_word": "MAP",
+                "reason": "A treasure map is a classic way of marking where buried or hidden treasure can be found.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "MAP",
+                "chosen_word": "AMAZON",
+                "reason": "The Amazon River and rainforest are prominent features shown on world maps, making it the most direct map association here.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "MAP",
+                "chosen_word": "PYRAMID",
+                "reason": "Pyramids are famous landmarks that appear prominently on maps, especially maps of Egypt.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PYRAMID",
+                "chosen_word": "CASTLE",
+                "reason": "Both are large, historic stone structures built as monuments or fortifications, so they share a close architectural association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "CASTLE",
+                "chosen_word": "BRIDGE",
+                "reason": "Castles are commonly known for their drawbridges, which span the moat and guard the entrance.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "CASTLE",
+                "chosen_word": "COURT",
+                "reason": "A castle is a royal residence, and its courtyard, or the royal court that lived in it, is a closely related idea.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T22:34:05",
+        "starting_clue": "TREASURE",
+        "hidden_chain": [
+            "TREASURE",
+            "MAP",
+            "PYRAMID",
+            "CASTLE",
+            "BELL"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 4,
+        "correct_guesses": 1,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "TREASURE",
+                "chosen_word": "MAP",
+                "reason": "A 'treasure map' is a common phrase; maps are directly used to locate treasure.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "MAP",
+                "chosen_word": "ROSE",
+                "reason": "A compass rose is a standard feature on maps to indicate directions, making 'rose' directly associated with maps.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "MAP",
+                "chosen_word": "AMAZON",
+                "reason": "The Amazon (river and rainforest) is a major geographic feature commonly found and referenced on maps.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "MAP",
+                "chosen_word": "BRIDGE",
+                "reason": "Maps commonly mark bridges as key landmarks and crossings between places, making 'bridge' a natural geographic feature associated with maps.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T22:34:22",
+        "starting_clue": "NIGHT",
+        "hidden_chain": [
+            "NIGHT",
+            "MOON",
+            "EAGLE",
+            "HORSE",
+            "RACKET"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 6,
+        "correct_guesses": 3,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "NIGHT",
+                "chosen_word": "OWL",
+                "reason": "Owls are nocturnal birds, strongly associated with the night.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "NIGHT",
+                "chosen_word": "MOON",
+                "reason": "The moon is the most familiar celestial body associated with the night sky.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "MOON",
+                "chosen_word": "EAGLE",
+                "reason": "Eagle was the name of the Apollo 11 lunar module that landed on the Moon in 1969.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "EAGLE",
+                "chosen_word": "QUEEN",
+                "reason": "Eagles and Queen are both famous classic rock bands from the 1970s, so the pairing is a natural music association.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "EAGLE",
+                "chosen_word": "HORSE",
+                "reason": "Both eagle and horse are common animals, the most direct shared category among the available words.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "HORSE",
+                "chosen_word": "BASKETBALL",
+                "reason": "HORSE is a popular basketball shooting game, where players try to match a sequence of shots.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-19T22:35:12",
+        "starting_clue": "NIGHT",
+        "hidden_chain": [
+            "NIGHT",
+            "MOON",
+            "EAGLE",
+            "HORSE",
+            "RACKET"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 5,
+        "correct_guesses": 2,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "NIGHT",
+                "chosen_word": "OWL",
+                "reason": "Night owl is a common phrase and owls are strongly associated with nighttime as nocturnal birds.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "NIGHT",
+                "chosen_word": "MOON",
+                "reason": "The moon is directly and commonly associated with night, appearing at night and symbolizing nighttime.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "MOON",
+                "chosen_word": "EAGLE",
+                "reason": "Apollo 11's lunar module was named 'Eagle' \u2014 'The Eagle has landed' is a direct, well-known Moon association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "EAGLE",
+                "chosen_word": "BELL",
+                "reason": "The bald eagle and the Liberty Bell are both iconic symbols of the United States, a common, natural association.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "EAGLE",
+                "chosen_word": "QUEEN",
+                "reason": "Eagles (often referred to by the singular 'Eagle') and Queen are both iconic rock bands \u2014 a common, natural musical association.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-20T09:58:06",
+        "starting_clue": "HOOP",
+        "hidden_chain": [
+            "HOOP",
+            "NET",
+            "RACKET",
+            "PIANO",
+            "JAZZ"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 5,
+        "correct_guesses": 2,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "HOOP",
+                "chosen_word": "BASKETBALL",
+                "reason": "A hoop is the basket a basketball is shot through, making basketball the most direct association.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "HOOP",
+                "chosen_word": "NET",
+                "reason": "A basketball hoop is fitted with a net that the ball passes through when scored.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "NET",
+                "chosen_word": "RACKET",
+                "reason": "A racket and a net are both key pieces of equipment in tennis.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "RACKET",
+                "chosen_word": "JAZZ",
+                "reason": "A 'racket' can mean a loud, noisy din, and jazz is a lively music genre often described as loud and boisterous.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "RACKET",
+                "chosen_word": "BRIDGE",
+                "reason": "The bridge is a real part of a tennis racket's frame, the section joining the head to the throat and handle.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-20T09:58:32",
+        "starting_clue": "HOOP",
+        "hidden_chain": [
+            "HOOP",
+            "NET",
+            "RACKET",
+            "PIANO",
+            "JAZZ"
+        ],
+        "final_result": "chain_complete",
+        "lives_remaining": 2,
+        "total_guesses": 5,
+        "correct_guesses": 4,
+        "wrong_guesses": 1,
+        "moves": [
+            {
+                "clue": "HOOP",
+                "chosen_word": "BASKETBALL",
+                "reason": "The term 'hoop' commonly refers to a basketball hoop\u2014the primary equipment in the sport where players shoot a basketball through the hoop.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "HOOP",
+                "chosen_word": "NET",
+                "reason": "A basketball hoop is commonly paired with a net \u2014 'hoop and net' is a direct, everyday association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "NET",
+                "chosen_word": "RACKET",
+                "reason": "A racket is directly associated with a net in sports like tennis and badminton\u2014you use a racket to hit the ball/shuttle over the net.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "RACKET",
+                "chosen_word": "PIANO",
+                "reason": "A 'racket' commonly means a loud, unpleasant noise \u2014 people often say someone is 'making a racket' on the piano (i.e., playing it loudly or noisily).",
+                "outcome": "correct"
+            },
+            {
+                "clue": "PIANO",
+                "chosen_word": "JAZZ",
+                "reason": "The piano is a central and iconic instrument in jazz music (jazz piano, jazz standards, improvisation).",
+                "outcome": "chain_complete"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-20T09:58:40",
+        "starting_clue": "MOVIE",
+        "hidden_chain": [
+            "MOVIE",
+            "CAMERA",
+            "HOLLYWOOD",
+            "STAR",
+            "DIAMOND"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 4,
+        "correct_guesses": 1,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "MOVIE",
+                "chosen_word": "HOLLYWOOD",
+                "reason": "Hollywood is the center of the American film industry, so it is the most direct association with the word movie.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "MOVIE",
+                "chosen_word": "CAMERA",
+                "reason": "Movies are filmed and captured with a camera, making it the most direct and common association with the word movie.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "CAMERA",
+                "chosen_word": "GLASS",
+                "reason": "A camera's lens is made of glass, making GLASS the most direct association.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "CAMERA",
+                "chosen_word": "STAR",
+                "reason": "A camera is used to film stars, and a star is the person you see in front of the camera in movies and photos.",
+                "outcome": "out_of_lives"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-10-20T09:58:56",
+        "starting_clue": "MOVIE",
+        "hidden_chain": [
+            "MOVIE",
+            "CAMERA",
+            "HOLLYWOOD",
+            "STAR",
+            "DIAMOND"
+        ],
+        "final_result": "out_of_lives",
+        "lives_remaining": 0,
+        "total_guesses": 4,
+        "correct_guesses": 1,
+        "wrong_guesses": 3,
+        "moves": [
+            {
+                "clue": "MOVIE",
+                "chosen_word": "HOLLYWOOD",
+                "reason": "Hollywood is widely synonymous with the film industry and commonly used to refer to movies and movie-making.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "MOVIE",
+                "chosen_word": "STAR",
+                "reason": "The phrase 'movie star' is a common, direct association linking actors/celebrities to films.",
+                "outcome": "wrong"
+            },
+            {
+                "clue": "MOVIE",
+                "chosen_word": "CAMERA",
+                "reason": "Movies are created by filming with a camera; 'movie camera' is a direct, common association.",
+                "outcome": "correct"
+            },
+            {
+                "clue": "CAMERA",
+                "chosen_word": "GLASS",
+                "reason": "Cameras use glass for lenses and viewfinders; glass is the primary optical material associated with cameras.",
+                "outcome": "out_of_lives"
+            }
+        ]
     }
 ]

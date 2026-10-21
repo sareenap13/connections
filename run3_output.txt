@@ -1,0 +1,2032 @@
+Experiment run ID: 20261021T124858700832Z
+
+========== Batch 1 ==========
+
+Batch 1, Game 1/10
+Hidden chain: KNIGHT -> HORSE -> CHESS -> QUEEN -> CASTLE
+
+Playing as paired using claude-haiku-5-5
+Clue:  KNIGHT
+Chosen word:  CHESS
+Reason:  A knight is one of the six piece types in chess, so the association is direct and widely understood.
+Outcome:  wrong
+Clue:  KNIGHT
+Chosen word:  HORSE
+Reason:  A knight is traditionally a mounted warrior, and the knight chess piece is shaped like a horse.
+Outcome:  correct
+Clue:  HORSE
+Chosen word:  CASTLE
+Reason:  Horse is the nickname for the knight, and castle is another chess piece, so the two are closely linked through the game of chess.
+Outcome:  wrong
+Clue:  HORSE
+Chosen word:  SPY
+Reason:  A Trojan horse is a famous tactic where soldiers hid inside a wooden horse to infiltrate Troy, and it's also a term for a spy or hidden infiltrator.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['KNIGHT', 'HORSE', 'CHESS', 'QUEEN', 'CASTLE']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  KNIGHT
+Chosen word:  CHESS
+Reason:  A knight is a standard chess piece (the L‑shaped moving piece), making CHESS the most direct association.
+Outcome:  wrong
+Clue:  KNIGHT
+Chosen word:  HORSE
+Reason:  Knights are commonly depicted riding horses (their steed); the chess knight is also represented by a horse head, making HORSE a direct association.
+Outcome:  correct
+Clue:  HORSE
+Chosen word:  CASTLE
+Reason:  Horses are strongly associated with medieval castles and knights—knights rode horses and kept them at castles, a common, natural link.
+Outcome:  wrong
+Clue:  HORSE
+Chosen word:  QUEEN
+Reason:  In casual speech the chess knight is called a 'horse'; the queen is another chess piece, making a direct chess-based association.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['KNIGHT', 'HORSE', 'CHESS', 'QUEEN', 'CASTLE']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 1, Game 2/10
+Hidden chain: PRINCESS -> PEACH -> CASTLE -> STAR -> MOON
+
+Playing as paired using claude-haiku-5-5
+Clue:  PRINCESS
+Chosen word:  PEACH
+Reason:  Princess Peach is a famous Nintendo character from the Mario franchise.
+Outcome:  correct
+Clue:  PEACH
+Chosen word:  CASTLE
+Reason:  Princess Peach from the Super Mario games lives in Peach's Castle.
+Outcome:  correct
+Clue:  CASTLE
+Chosen word:  COURT
+Reason:  A castle is where a royal court holds its residence and gatherings, so COURT is the most natural direct association.
+Outcome:  wrong
+Clue:  CASTLE
+Chosen word:  WIZARD
+Reason:  Wizards are commonly pictured living in or working from castles, as in fantasy stories like Hogwarts.
+Outcome:  wrong
+Clue:  CASTLE
+Chosen word:  PIRATE
+Reason:  Castles and pirates are closely linked through classic adventure stories, where pirates raid or hide out in castles and forts.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['PRINCESS', 'PEACH', 'CASTLE', 'STAR', 'MOON']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  PRINCESS
+Chosen word:  CASTLE
+Reason:  A princess is commonly associated with living in or being rescued from a castle in fairy tales and popular culture.
+Outcome:  wrong
+Clue:  PRINCESS
+Chosen word:  PEACH
+Reason:  Princess Peach is the well-known Nintendo character directly named 'Princess Peach', a common, immediate association.
+Outcome:  correct
+Clue:  PEACH
+Chosen word:  PITCH
+Reason:  In slang (especially baseball), a particularly excellent throw is called 'a peach' — e.g., 'that's a peach' about a pitch.
+Outcome:  wrong
+Clue:  PEACH
+Chosen word:  COURT
+Reason:  "Peach" suggests 'impeach,' which leads to a trial/hearing in a court.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['PRINCESS', 'PEACH', 'CASTLE', 'STAR', 'MOON']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 1, Game 3/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: DANCE -> JAZZ -> ROBOT -> DRAGON -> PEACH
+
+Playing as paired using claude-haiku-5-5
+Clue:  DANCE
+Chosen word:  JAZZ
+Reason:  Jazz is a music genre strongly associated with dance, and it is the most direct match to the clue DANCE.
+Outcome:  correct
+Clue:  JAZZ
+Chosen word:  COURT
+Reason:  Jazz suggests the NBA's Utah Jazz, who play on a basketball court.
+Outcome:  wrong
+Clue:  JAZZ
+Chosen word:  ICE
+Reason:  'Cool' is a well-known jazz style (cool jazz), and ice is a common synonym for cool.
+Outcome:  wrong
+Clue:  JAZZ
+Chosen word:  PARIS
+Reason:  Paris has a long, well-known history with jazz, from the 1920s expatriate scene to its enduring jazz clubs and festivals.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['DANCE', 'JAZZ', 'ROBOT', 'DRAGON', 'PEACH']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  DANCE
+Chosen word:  JAZZ
+Reason:  Jazz is a widely known music and dance style—'jazz dance' is a common, direct association.
+Outcome:  correct
+Clue:  JAZZ
+Chosen word:  APPLE
+Reason:  The Big Apple = New York City, a major historic center of jazz (Harlem, clubs, bebop), so APPLE links naturally to JAZZ.
+Outcome:  wrong
+Clue:  JAZZ
+Chosen word:  COURT
+Reason:  The Utah Jazz are an NBA basketball team, and basketball is played on a court — a direct, common association.
+Outcome:  wrong
+Clue:  JAZZ
+Chosen word:  PARIS
+Reason:  Paris is famously associated with jazz — historic jazz clubs, the Jazz Age expatriate scene, and well-known Paris jazz festivals.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['DANCE', 'JAZZ', 'ROBOT', 'DRAGON', 'PEACH']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 1, Game 4/10
+Hidden chain: SPORT -> BASKETBALL -> COURT -> PITCH -> BAT
+
+Playing as paired using claude-haiku-5-5
+Clue:  SPORT
+Chosen word:  BASKETBALL
+Reason:  Basketball is a widely played sport, making it the most direct and common association with the clue SPORT.
+Outcome:  correct
+Clue:  BASKETBALL
+Chosen word:  COURT
+Reason:  A basketball game is played on a court, making COURT the most direct association.
+Outcome:  correct
+Clue:  COURT
+Chosen word:  PITCH
+Reason:  A pitch is a sports playing surface, like a court, so the two are closely linked as places where games are played.
+Outcome:  correct
+Clue:  PITCH
+Chosen word:  BAT
+Reason:  In baseball, a pitch is thrown to the batter, so BAT is the most direct and common association.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['SPORT', 'BASKETBALL', 'COURT', 'PITCH', 'BAT']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  SPORT
+Chosen word:  BASKETBALL
+Reason:  Basketball is itself a sport and is the most direct, common match among the available words.
+Outcome:  correct
+Clue:  BASKETBALL
+Chosen word:  COURT
+Reason:  Basketball is played on a court; 'court' directly refers to the basketball playing surface.
+Outcome:  correct
+Clue:  COURT
+Chosen word:  PITCH
+Reason:  A court and a pitch are both types of playing surfaces/venues in sports (court for tennis/basketball, pitch for football/cricket).
+Outcome:  correct
+Clue:  PITCH
+Chosen word:  BAT
+Reason:  A 'pitch' is the throw in baseball delivered to a batter, who uses a bat—pitch and bat are directly and commonly associated.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['SPORT', 'BASKETBALL', 'COURT', 'PITCH', 'BAT']
+Lives remaining:  3
+held_out result: chain_complete
+
+Batch 1, Game 5/10
+Hidden chain: KING -> QUEEN -> COURT -> CASTLE -> DIAMOND
+
+Playing as paired using claude-haiku-5-5
+Clue:  KING
+Chosen word:  QUEEN
+Reason:  A queen is the king's royal counterpart, so the two words are the most direct pairing.
+Outcome:  correct
+Clue:  QUEEN
+Chosen word:  CASTLE
+Reason:  A queen is traditionally associated with a castle as her royal residence, and castle is also a chess piece alongside the queen.
+Outcome:  wrong
+Clue:  QUEEN
+Chosen word:  COURT
+Reason:  A queen is a royal figure who presides over a royal court, and queens are also among the face cards known as court cards.
+Outcome:  correct
+Clue:  COURT
+Chosen word:  GOAL
+Reason:  A court is a sports playing area, such as a basketball or tennis court, and scoring a goal is a core part of playing on one.
+Outcome:  wrong
+Clue:  COURT
+Chosen word:  DIAMOND
+Reason:  A diamond is a sports playing surface, like a court, most familiarly the baseball diamond, so it is the closest venue-type association among the options.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['KING', 'QUEEN', 'COURT', 'CASTLE', 'DIAMOND']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  KING
+Chosen word:  QUEEN
+Reason:  King and queen are the primary royal counterparts; the most direct, common association.
+Outcome:  correct
+Clue:  QUEEN
+Chosen word:  DIAMOND
+Reason:  Direct phrase 'Queen of Diamonds' (playing card), a common and natural association with 'Queen.'
+Outcome:  wrong
+Clue:  QUEEN
+Chosen word:  CASTLE
+Reason:  A queen is commonly associated with a castle as the royal residence, a direct and widely understood link to monarchy.
+Outcome:  wrong
+Clue:  QUEEN
+Chosen word:  COURT
+Reason:  A queen is most directly associated with a royal court; queens preside over or are part of a court.
+Outcome:  correct
+Clue:  COURT
+Chosen word:  ROSE
+Reason:  To 'court' someone is to woo them, and giving a rose is a common, widely understood symbol/gift of courtship.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['KING', 'QUEEN', 'COURT', 'CASTLE', 'DIAMOND']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 1, Game 6/10
+Setter attempt 1 failed: The setter returned no text response.
+Setter attempt 2 failed: Could not parse setter JSON: Unterminated string starting at: line 3 column 5 (char 37)
+Setter attempt 3 failed: The setter returned no text response.
+Skipped game: The setter returned no text response.
+
+Batch 1, Game 7/10
+Hidden chain: ROYAL -> CROWN -> COURT -> CLOWN -> BEAR
+
+Playing as paired using claude-haiku-5-5
+Clue:  ROYAL
+Chosen word:  CROWN
+Reason:  A crown is the traditional symbol of royalty, worn by kings and queens.
+Outcome:  correct
+Clue:  CROWN
+Chosen word:  COURT
+Reason:  A crown is a symbol of royal power, and the royal court is where a monarch holds authority.
+Outcome:  correct
+Clue:  COURT
+Chosen word:  HEART
+Reason:  To 'court' someone means to woo them, which is often described as winning their heart.
+Outcome:  wrong
+Clue:  COURT
+Chosen word:  CLOWN
+Reason:  A court jester was a clown-like entertainer employed at royal courts.
+Outcome:  correct
+Clue:  CLOWN
+Chosen word:  WHEEL
+Reason:  Clowns are famous for circus acts like riding a unicycle, which is built around a wheel.
+Outcome:  wrong
+Clue:  CLOWN
+Chosen word:  BEAR
+Reason:  Clowns and performing bears are both classic circus acts.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['ROYAL', 'CROWN', 'COURT', 'CLOWN', 'BEAR']
+Lives remaining:  1
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  ROYAL
+Chosen word:  CROWN
+Reason:  A crown is the primary symbol and regalia of a monarch and is directly associated with royalty.
+Outcome:  correct
+Clue:  CROWN
+Chosen word:  COURT
+Reason:  'Crown' commonly pairs with 'court' (e.g., the Crown Court or a royal court associated with the monarch).
+Outcome:  correct
+Clue:  COURT
+Chosen word:  CLOWN
+Reason:  Court jester — a clown-like entertainer historically associated with royal courts.
+Outcome:  correct
+Clue:  CLOWN
+Chosen word:  BEAR
+Reason:  Clowns and trained bears are classic, commonly paired acts in circuses, making BEAR a natural association with CLOWN.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['ROYAL', 'CROWN', 'COURT', 'CLOWN', 'BEAR']
+Lives remaining:  3
+held_out result: chain_complete
+
+Batch 1, Game 8/10
+Hidden chain: HALLOWEEN -> GHOST -> VAMPIRE -> CASTLE -> KNIGHT
+
+Playing as paired using claude-haiku-5-5
+Clue:  HALLOWEEN
+Chosen word:  VAMPIRE
+Reason:  Vampires are classic Halloween monsters, closely associated with the holiday's costumes and horror themes.
+Outcome:  wrong
+Clue:  HALLOWEEN
+Chosen word:  GHOST
+Reason:  Ghosts are one of the most iconic symbols of Halloween, appearing in costumes and decorations.
+Outcome:  correct
+Clue:  GHOST
+Chosen word:  CASTLE
+Reason:  Castles are a classic setting for ghost stories, as in the haunted castle trope.
+Outcome:  wrong
+Clue:  GHOST
+Chosen word:  MIRROR
+Reason:  Mirrors are a classic haunted-house and ghost story trope, since ghosts are often said to appear in mirrors.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['HALLOWEEN', 'GHOST', 'VAMPIRE', 'CASTLE', 'KNIGHT']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  HALLOWEEN
+Chosen word:  GHOST
+Reason:  Ghosts are a classic, widely recognized Halloween symbol used in costumes, decorations, and spooky themes.
+Outcome:  correct
+Clue:  GHOST
+Chosen word:  CASTLE
+Reason:  Haunted castles are a common, widely recognized association with ghosts.
+Outcome:  wrong
+Clue:  GHOST
+Chosen word:  VAMPIRE
+Reason:  Vampires and ghosts are both common supernatural/undead creatures associated with horror and the paranormal.
+Outcome:  correct
+Clue:  VAMPIRE
+Chosen word:  MIRROR
+Reason:  Classic, widely known trait: vampires are said to cast no reflection in mirrors.
+Outcome:  wrong
+Clue:  VAMPIRE
+Chosen word:  WIZARD
+Reason:  Both vampires and wizards are common supernatural/fantasy figures frequently linked together in folklore and fiction.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['HALLOWEEN', 'GHOST', 'VAMPIRE', 'CASTLE', 'KNIGHT']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 1, Game 9/10
+Hidden chain: SWEET -> HONEY -> BEAR -> TRACK -> STAR
+
+Playing as paired using claude-haiku-5-5
+Clue:  SWEET
+Chosen word:  HONEY
+Reason:  Honey is one of the most common and direct examples of something sweet.
+Outcome:  correct
+Clue:  HONEY
+Chosen word:  BEAR
+Reason:  Bears are famously associated with eating honey, as in the classic image of a bear raiding a beehive.
+Outcome:  correct
+Clue:  BEAR
+Chosen word:  TRACK
+Reason:  Bears leave tracks, meaning footprints, which is a common and direct association with the word bear.
+Outcome:  correct
+Clue:  TRACK
+Chosen word:  STAR
+Reason:  A 'track star' is a common phrase for a standout athlete in track and field, which connects directly to TRACK.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['SWEET', 'HONEY', 'BEAR', 'TRACK', 'STAR']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  SWEET
+Chosen word:  HONEY
+Reason:  Honey is a naturally sweet substance and is directly and commonly associated with sweetness.
+Outcome:  correct
+Clue:  HONEY
+Chosen word:  BEAR
+Reason:  Bears are commonly associated with honey (e.g., raiding beehives, Winnie-the-Pooh), making BEAR the most direct link to HONEY.
+Outcome:  correct
+Clue:  BEAR
+Chosen word:  SNOW
+Reason:  Polar bears are strongly associated with snow and the Arctic environment, making 'snow' the most natural common link to 'bear'.
+Outcome:  wrong
+Clue:  BEAR
+Chosen word:  TRACK
+Reason:  Bears leave distinctive tracks/footprints and 'bear tracks' is a common, direct natural association (tracking bears in the wild).
+Outcome:  correct
+Clue:  TRACK
+Chosen word:  STAR
+Reason:  Common compound phrase 'track star' — an athlete who excels in track events.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['SWEET', 'HONEY', 'BEAR', 'TRACK', 'STAR']
+Lives remaining:  2
+held_out result: chain_complete
+
+Batch 1, Game 10/10
+Hidden chain: SUPERHERO -> BAT -> SPIDER -> ICE -> ANCHOR
+
+Playing as paired using claude-haiku-5-5
+Clue:  SUPERHERO
+Chosen word:  BAT
+Reason:  Batman is one of the most iconic superheroes, so BAT is the most direct association.
+Outcome:  correct
+Clue:  BAT
+Chosen word:  SPIDER
+Reason:  Bats and spiders are both classic Halloween creatures, and both are also superheroes (Batman and Spider-Man).
+Outcome:  correct
+Clue:  SPIDER
+Chosen word:  AMAZON
+Reason:  The Amazon rainforest is home to many spider species, including the goliath birdeater, one of the largest spiders in the world.
+Outcome:  wrong
+Clue:  SPIDER
+Chosen word:  DRAGON
+Reason:  Both are creatures often featured in fantasy and folklore, making this the most natural pairing among the available words, though the link is loose.
+Outcome:  wrong
+Clue:  SPIDER
+Chosen word:  SPAIN
+Reason:  SPAIN is the closest match, sharing the opening 'SP' sound and spelling with SPIDER, though the link is only lexical rather than a strong thematic one.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['SUPERHERO', 'BAT', 'SPIDER', 'ICE', 'ANCHOR']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  SUPERHERO
+Chosen word:  BAT
+Reason:  Batman is an iconic superhero strongly associated with bats (Bat-Signal, Batcave, Bat-symbol).
+Outcome:  correct
+Clue:  BAT
+Chosen word:  SPIDER
+Reason:  Bat and spider are both creatures commonly associated together (Halloween, dark/creepy animals) — a natural animal-themed connection.
+Outcome:  correct
+Clue:  SPIDER
+Chosen word:  WIZARD
+Reason:  Spiders are commonly associated with wizard-themed fantasy (e.g., giant spiders like Aragog in Harry Potter), making a natural pop-culture connection to wizards.
+Outcome:  wrong
+Clue:  SPIDER
+Chosen word:  AMAZON
+Reason:  The Amazon rainforest is commonly associated with spiders (e.g., tarantulas) and jungle biodiversity, a natural and widely recognized link.
+Outcome:  wrong
+Clue:  SPIDER
+Chosen word:  BASKETBALL
+Reason:  Spiders make webs (nets), and a basketball hoop uses a net — the shared concept of a web/net links spider to basketball.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['SUPERHERO', 'BAT', 'SPIDER', 'ICE', 'ANCHOR']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Updating setter strategy notes...
+Strategy notes updated to version 1.
+Updated notes: Prefer common, direct associations with a single clear answer, such as sport-to-named-sport, or a well-known character to their famous setting or item. Guessers often miss links that depend on a second-order idea (e.g., Peach to Castle, then Castle to Star via Mario power-ups), so avoid steps that require knowing a niche franchise detail. A link is easier when the target is the most obvious next word a typical player would reach for; avoid pairs where a strong alternative (court as basketball venue, castle as chess piece, pirate, wizard) can plausibly fit. Be cautious with chains that drift into wordplay or lexical links (e.g., SPIDER to ICE), which guessers did not follow. Treat these as tentative, drawn from one batch of games.
+
+Batch 1, paired: 3/10 chains completed, 1 skipped or errored.
+
+Batch 1, held_out: 3/10 chains completed, 1 skipped or errored.
+
+========== Batch 2 ==========
+
+Batch 2, Game 1/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: FLAMENCO -> GUITAR -> SPAIN -> ORANGE -> MILK
+
+Playing as paired using claude-haiku-5-5
+Clue:  FLAMENCO
+Chosen word:  GUITAR
+Reason:  Flamenco is a Spanish music and dance style traditionally accompanied by the guitar.
+Outcome:  correct
+Clue:  GUITAR
+Chosen word:  SPAIN
+Reason:  The guitar is strongly associated with Spain, especially through flamenco and the classical Spanish guitar.
+Outcome:  correct
+Clue:  SPAIN
+Chosen word:  ORANGE
+Reason:  Spain, especially the Valencia region, is a major producer and exporter of oranges.
+Outcome:  correct
+Clue:  ORANGE
+Chosen word:  PEPPER
+Reason:  Orange is a common color of bell peppers, so 'orange pepper' is a direct, everyday association.
+Outcome:  wrong
+Clue:  ORANGE
+Chosen word:  MOON
+Reason:  A full moon near the horizon often looks orange, and the 'harvest moon' is commonly described that way.
+Outcome:  wrong
+Clue:  ORANGE
+Chosen word:  BOTTLE
+Reason:  Orange is strongly tied to prescription pill bottles, which are commonly made of orange-tinted plastic, and to orange soda bottles.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['FLAMENCO', 'GUITAR', 'SPAIN', 'ORANGE', 'MILK']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  FLAMENCO
+Chosen word:  SPAIN
+Reason:  Flamenco is a traditional music and dance style that originated in Spain (notably Andalusia), so Spain is the most direct association.
+Outcome:  wrong
+Clue:  FLAMENCO
+Chosen word:  GUITAR
+Reason:  Flamenco is a traditional Spanish music and dance style that is most commonly and directly associated with the acoustic/Spanish guitar.
+Outcome:  correct
+Clue:  GUITAR
+Chosen word:  PITCH
+Reason:  Guitar produces musical pitch; 'pitch' directly refers to the notes/frequency played on a guitar.
+Outcome:  wrong
+Clue:  GUITAR
+Chosen word:  EAGLE
+Reason:  The band The Eagles is famed for iconic guitar work (e.g., the 'Hotel California' guitar solo), making EAGLE a natural association with GUITAR.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['FLAMENCO', 'GUITAR', 'SPAIN', 'ORANGE', 'MILK']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 2, Game 2/10
+Hidden chain: PIRATE -> TREASURE -> MAP -> ISLAND -> DRAGON
+
+Playing as paired using claude-haiku-5-5
+Clue:  PIRATE
+Chosen word:  TREASURE
+Reason:  Pirates are classically associated with hunting for buried treasure, the most direct and widely known link to the clue.
+Outcome:  correct
+Clue:  TREASURE
+Chosen word:  MAP
+Reason:  Treasure maps are a classic way of marking the location of buried treasure, making MAP the most direct association.
+Outcome:  correct
+Clue:  MAP
+Chosen word:  ISLAND
+Reason:  Islands are a classic feature drawn on maps, and treasure maps almost always show an island.
+Outcome:  correct
+Clue:  ISLAND
+Chosen word:  DRAGON
+Reason:  The Komodo dragon is a famous animal found only on a few Indonesian islands, including Komodo Island.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['PIRATE', 'TREASURE', 'MAP', 'ISLAND', 'DRAGON']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  PIRATE
+Chosen word:  TREASURE
+Reason:  Pirates are most commonly associated with seeking, burying, and guarding treasure (treasure chests, loot).
+Outcome:  correct
+Clue:  TREASURE
+Chosen word:  MAP
+Reason:  The phrase 'treasure map' is a direct, commonly known association for locating treasure.
+Outcome:  correct
+Clue:  MAP
+Chosen word:  ISLAND
+Reason:  Islands are common geographic features shown on maps and often referenced in maps (e.g., treasure maps, island maps).
+Outcome:  correct
+Clue:  ISLAND
+Chosen word:  CRAB
+Reason:  Crabs are commonly associated with islands and beaches—a natural, widely recognized island animal.
+Outcome:  wrong
+Clue:  ISLAND
+Chosen word:  SUN
+Reason:  Islands are commonly associated with the sun (tropical/island vacations, sunbathing, sunny beaches) — a natural, widely understood link.
+Outcome:  wrong
+Clue:  ISLAND
+Chosen word:  BOTTLE
+Reason:  Strong, common association: 'message in a bottle' and shipwrecked castaways sending bottles from deserted islands.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['PIRATE', 'TREASURE', 'MAP', 'ISLAND', 'DRAGON']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 2, Game 3/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: MOUSE -> CHEESE -> CAKE -> COOKIE -> GLASS
+
+Playing as paired using claude-haiku-5-5
+Clue:  MOUSE
+Chosen word:  CHEESE
+Reason:  Mice are classically associated with eating cheese, the most familiar mouse-related image.
+Outcome:  correct
+Clue:  CHEESE
+Chosen word:  CAKE
+Reason:  Cheesecake is a well-known dessert that combines cheese with cake.
+Outcome:  correct
+Clue:  CAKE
+Chosen word:  COOKIE
+Reason:  A cookie is a baked sweet treat much like a cake, so the two are directly associated as desserts.
+Outcome:  correct
+Clue:  COOKIE
+Chosen word:  STAR
+Reason:  Star-shaped cookies are a very common type of cookie, especially for holiday baking and cookie cutters.
+Outcome:  wrong
+Clue:  COOKIE
+Chosen word:  TRACK
+Reason:  Website cookies are used to track a user's browsing activity across pages and sites.
+Outcome:  wrong
+Clue:  COOKIE
+Chosen word:  GLASS
+Reason:  Cookies are often stored in a glass cookie jar, a common everyday association.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['MOUSE', 'CHEESE', 'CAKE', 'COOKIE', 'GLASS']
+Lives remaining:  1
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  MOUSE
+Chosen word:  CHEESE
+Reason:  Mice are commonly associated with eating cheese; cheese is a classic, widely recognized mouse attractant.
+Outcome:  correct
+Clue:  CHEESE
+Chosen word:  CAKE
+Reason:  Cheesecake is a common, direct compound word linking cheese and cake.
+Outcome:  correct
+Clue:  CAKE
+Chosen word:  COOKIE
+Reason:  Cookie is a closely related baked dessert/sweet like cake; both are common bakery items and frequently associated together.
+Outcome:  correct
+Clue:  COOKIE
+Chosen word:  GLASS
+Reason:  Cookies are commonly paired with a glass of milk and often stored in glass jars, making GLASS a natural, everyday association with COOKIE.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['MOUSE', 'CHEESE', 'CAKE', 'COOKIE', 'GLASS']
+Lives remaining:  3
+held_out result: chain_complete
+
+Batch 2, Game 4/10
+Hidden chain: MOUNTAIN -> EVEREST -> VOLCANO -> DRAGON -> CASTLE
+
+Playing as paired using claude-haiku-5-5
+Clue:  MOUNTAIN
+Chosen word:  EVEREST
+Reason:  Mount Everest is the world's highest mountain, the most direct and widely known association with the word MOUNTAIN.
+Outcome:  correct
+Clue:  EVEREST
+Chosen word:  VOLCANO
+Reason:  Mount Everest is a mountain, and a volcano is another major landform, so this is the closest natural association among the available words.
+Outcome:  correct
+Clue:  VOLCANO
+Chosen word:  DRAGON
+Reason:  Dragons are commonly pictured breathing fire, much like a volcano erupting with lava and flame.
+Outcome:  correct
+Clue:  DRAGON
+Chosen word:  CASTLE
+Reason:  Dragons are classic fairy-tale creatures that guard or lair in castles.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['MOUNTAIN', 'EVEREST', 'VOLCANO', 'DRAGON', 'CASTLE']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  MOUNTAIN
+Chosen word:  EVEREST
+Reason:  Mount Everest is the most famous and highest mountain, a direct and common association with 'MOUNTAIN'.
+Outcome:  correct
+Clue:  EVEREST
+Chosen word:  MAP
+Reason:  Mount Everest is a geographic landmark most commonly found and located on maps; maps are used to show its location and routes.
+Outcome:  wrong
+Clue:  EVEREST
+Chosen word:  VOLCANO
+Reason:  Mount Everest is a mountain; volcanoes are a common type/category of mountain, making 'VOLCANO' the strongest mountain-related association.
+Outcome:  correct
+Clue:  VOLCANO
+Chosen word:  GLASS
+Reason:  Volcanic glass (obsidian) is formed when lava cools rapidly, making 'glass' a direct, commonly known volcanic product.
+Outcome:  wrong
+Clue:  VOLCANO
+Chosen word:  DRAGON
+Reason:  Dragons are commonly depicted with fire and volcanic lairs, creating a strong, natural association with volcanoes.
+Outcome:  correct
+Clue:  DRAGON
+Chosen word:  CASTLE
+Reason:  Dragons are commonly depicted in fairy tales and fantasy as guarding, attacking, or living near castles.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['MOUNTAIN', 'EVEREST', 'VOLCANO', 'DRAGON', 'CASTLE']
+Lives remaining:  1
+held_out result: chain_complete
+
+Batch 2, Game 5/10
+Hidden chain: CIRCUS -> CLOWN -> LION -> DESERT -> STORM
+
+Playing as paired using claude-haiku-5-5
+Clue:  CIRCUS
+Chosen word:  CLOWN
+Reason:  Clowns are classic performers in a circus, making this the most direct and common association with the clue.
+Outcome:  correct
+Clue:  CLOWN
+Chosen word:  LION
+Reason:  Clowns and lions are both classic circus performers, so the link is direct and widely understood.
+Outcome:  correct
+Clue:  LION
+Chosen word:  LONDON
+Reason:  London's Trafalgar Square and Tower of London are famous for their stone lion statues.
+Outcome:  wrong
+Clue:  LION
+Chosen word:  DESERT
+Reason:  Lions are famously associated with arid savanna and desert habitats, such as the Sahara and Kalahari regions where lions live.
+Outcome:  correct
+Clue:  DESERT
+Chosen word:  STORM
+Reason:  "Desert Storm" is a well-known phrase, the name of the 1991 Gulf War military operation.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['CIRCUS', 'CLOWN', 'LION', 'DESERT', 'STORM']
+Lives remaining:  2
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  CIRCUS
+Chosen word:  CLOWN
+Reason:  Clowns are iconic, central performers at circuses, commonly associated with circus acts and entertainment.
+Outcome:  correct
+Clue:  CLOWN
+Chosen word:  LION
+Reason:  Clowns are commonly associated with the circus, and lions (lion tamers/acts) are classic circus elements, making LION a direct, natural link.
+Outcome:  correct
+Clue:  LION
+Chosen word:  OCEAN
+Reason:  Common compound 'sea lion' — a well-known marine mammal linking lion directly to the ocean.
+Outcome:  wrong
+Clue:  LION
+Chosen word:  MUMMY
+Reason:  Commonly associated via ancient Egypt—the Great Sphinx has a lion's body and links lions to Egyptian mummies/imagery.
+Outcome:  wrong
+Clue:  LION
+Chosen word:  BOOK
+Reason:  Directly evokes the famous title The Lion, the Witch and the Wardrobe (a book), a common and natural literary association with 'lion'.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['CIRCUS', 'CLOWN', 'LION', 'DESERT', 'STORM']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 2, Game 6/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: DESERT -> SAHARA -> ROSE -> BOWL -> RING
+
+Playing as paired using claude-haiku-5-5
+Clue:  DESERT
+Chosen word:  SAHARA
+Reason:  The Sahara is the largest hot desert in the world, so it is the most direct association with the clue DESERT.
+Outcome:  correct
+Clue:  SAHARA
+Chosen word:  SNAKE
+Reason:  Snakes are a classic desert animal, and the Sahara is the world's largest hot desert.
+Outcome:  wrong
+Clue:  SAHARA
+Chosen word:  ROSE
+Reason:  The desert rose is a well-known plant that grows in the Sahara and other arid deserts.
+Outcome:  correct
+Clue:  ROSE
+Chosen word:  BOWL
+Reason:  The Rose Bowl is a famous college football game, so BOWL is the most direct association with ROSE.
+Outcome:  correct
+Clue:  BOWL
+Chosen word:  RAIN
+Reason:  Rain combines with 'bow' to form 'rainbow', the closest compound-word link to 'bowl' among the available words.
+Outcome:  wrong
+Clue:  BOWL
+Chosen word:  PEPPER
+Reason:  A pepper pot or pepper bowl is a common condiment dish found alongside salt on a dining table.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['DESERT', 'SAHARA', 'ROSE', 'BOWL', 'RING']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  DESERT
+Chosen word:  SAHARA
+Reason:  The Sahara is a famous and directly named desert, a clear and common association with 'DESERT'.
+Outcome:  correct
+Clue:  SAHARA
+Chosen word:  MUMMY
+Reason:  Mummies are strongly associated with ancient Egypt and desert burial sites; Egypt lies in and along the Sahara, making a natural cultural/geographic link.
+Outcome:  wrong
+Clue:  SAHARA
+Chosen word:  ROSE
+Reason:  Sahara is a desert, and the common phrase 'desert rose' links deserts directly to 'rose.'
+Outcome:  correct
+Clue:  ROSE
+Chosen word:  BOWL
+Reason:  The Rose Bowl is a famous college football stadium/annual game, making BOWL the most direct and common association with ROSE.
+Outcome:  correct
+Clue:  BOWL
+Chosen word:  RING
+Reason:  'Bowl' most directly evokes the Super Bowl, and winning teams receive championship rings.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['DESERT', 'SAHARA', 'ROSE', 'BOWL', 'RING']
+Lives remaining:  2
+held_out result: chain_complete
+
+Batch 2, Game 7/10
+Setter attempt 1 failed: The setter returned no text response.
+Setter attempt 2 failed: The setter returned no text response.
+Setter attempt 3 failed: The setter returned no text response.
+Skipped game: The setter returned no text response.
+
+Batch 2, Game 8/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: HALLOWEEN -> MUMMY -> SPIDER -> VAMPIRE -> CASTLE
+
+Playing as paired using claude-haiku-5-5
+Clue:  HALLOWEEN
+Chosen word:  VAMPIRE
+Reason:  Vampires are classic Halloween monsters, widely featured in costumes and decorations.
+Outcome:  wrong
+Clue:  HALLOWEEN
+Chosen word:  MUMMY
+Reason:  Mummies are a classic Halloween monster, popular in costumes, decorations, and horror-themed fun.
+Outcome:  correct
+Clue:  MUMMY
+Chosen word:  HEART
+Reason:  In ancient Egyptian mummification, the heart was left in the body and weighed in the afterlife, so it is the most direct link to mummies among the options.
+Outcome:  wrong
+Clue:  MUMMY
+Chosen word:  SPIDER
+Reason:  Mummies and spiders are both classic spooky Halloween creatures, so they're commonly linked in horror imagery.
+Outcome:  correct
+Clue:  SPIDER
+Chosen word:  RACKET
+Reason:  A tennis racket's crisscrossed strings look like a spider's web, the most direct visual link among the options.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['HALLOWEEN', 'MUMMY', 'SPIDER', 'VAMPIRE', 'CASTLE']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  HALLOWEEN
+Chosen word:  VAMPIRE
+Reason:  Vampires are a classic Halloween creature and a common costume/decoration directly associated with the holiday.
+Outcome:  wrong
+Clue:  HALLOWEEN
+Chosen word:  MUMMY
+Reason:  A mummy is a classic Halloween creature and frequent costume/decoration directly associated with the holiday.
+Outcome:  correct
+Clue:  MUMMY
+Chosen word:  HEART
+Reason:  In Egyptian mummification the heart was typically left in the body and is famously associated with the weighing of the heart in the afterlife, making HEART a common, direct link to MUMMY.
+Outcome:  wrong
+Clue:  MUMMY
+Chosen word:  HAND
+Reason:  A mummy is a preserved body, and a mummified hand is a common, direct association/visual (the classic 'mummy's hand').
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['HALLOWEEN', 'MUMMY', 'SPIDER', 'VAMPIRE', 'CASTLE']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 2, Game 9/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: CITRUS -> LEMON -> ORANGE -> CHOCOLATE -> APPLE
+
+Playing as paired using claude-haiku-5-5
+Clue:  CITRUS
+Chosen word:  LEMON
+Reason:  A lemon is a citrus fruit, making it the most direct association with the clue CITRUS.
+Outcome:  correct
+Clue:  LEMON
+Chosen word:  ORANGE
+Reason:  Lemon and orange are both citrus fruits, so they are the most direct and natural association among the available words.
+Outcome:  correct
+Clue:  ORANGE
+Chosen word:  APPLE
+Reason:  Orange and apple are both common fruits, making this the most direct association among the available words.
+Outcome:  wrong
+Clue:  ORANGE
+Chosen word:  CHOCOLATE
+Reason:  Chocolate orange is a well-known confection, pairing the two words directly.
+Outcome:  correct
+Clue:  CHOCOLATE
+Chosen word:  BEAR
+Reason:  Chocolate bears, such as chocolate teddy bears, are a common treat, so BEAR is the most natural link among the options.
+Outcome:  wrong
+Clue:  CHOCOLATE
+Chosen word:  PIZZA
+Reason:  Chocolate and pizza are both common foods, and chocolate pizza is a well-known dessert, making this the most natural food-based link among the options.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['CITRUS', 'LEMON', 'ORANGE', 'CHOCOLATE', 'APPLE']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  CITRUS
+Chosen word:  ORANGE
+Reason:  Orange is a prototypical citrus fruit and the most direct, common association with the clue 'citrus'.
+Outcome:  wrong
+Clue:  CITRUS
+Chosen word:  LEMON
+Reason:  A lemon is a common, widely recognized citrus fruit.
+Outcome:  correct
+Clue:  LEMON
+Chosen word:  APPLE
+Reason:  Lemon and apple are both common fruits, a direct and natural category-based association.
+Outcome:  wrong
+Clue:  LEMON
+Chosen word:  CROWN
+Reason:  A lemon is strongly associated with the color yellow, and a crown is commonly associated with gold/yellow — a natural color-based link.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['CITRUS', 'LEMON', 'ORANGE', 'CHOCOLATE', 'APPLE']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 2, Game 10/10
+Hidden chain: WORLD CUP -> BRAZIL -> TEAM -> GOAL -> NET
+
+Playing as paired using claude-haiku-5-5
+Clue:  WORLD CUP
+Chosen word:  GOAL
+Reason:  Goals are the central scoring events in World Cup soccer matches, making it the most direct association with the clue.
+Outcome:  wrong
+Clue:  WORLD CUP
+Chosen word:  BRAZIL
+Reason:  Brazil is the most successful World Cup nation, with five titles, and is strongly identified with the tournament.
+Outcome:  correct
+Clue:  BRAZIL
+Chosen word:  TEAM
+Reason:  Brazil is famous for its national football team, one of the most successful teams in World Cup history.
+Outcome:  correct
+Clue:  TEAM
+Chosen word:  TRACK
+Reason:  A track team is a common term for an athletics squad, so TRACK is the most direct association with TEAM.
+Outcome:  wrong
+Clue:  TEAM
+Chosen word:  BEE
+Reason:  Bees work together as a coordinated team in a hive, and a 'bee' also means a group gathered to work collectively.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['WORLD CUP', 'BRAZIL', 'TEAM', 'GOAL', 'NET']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  WORLD CUP
+Chosen word:  BRAZIL
+Reason:  Brazil is the most successful and iconic national team in FIFA World Cup history, strongly and commonly associated with the tournament.
+Outcome:  correct
+Clue:  BRAZIL
+Chosen word:  TEAM
+Reason:  Brazil is strongly associated with its national football team, a globally famous and successful team (multiple World Cup wins).
+Outcome:  correct
+Clue:  TEAM
+Chosen word:  GOAL
+Reason:  Teams commonly pursue and score goals in sports; 'team goal' is a standard, direct phrase.
+Outcome:  correct
+Clue:  GOAL
+Chosen word:  NET
+Reason:  In many sports a goal is scored into or defined by a net (soccer, hockey), so NET is a direct, common association with GOAL.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['WORLD CUP', 'BRAZIL', 'TEAM', 'GOAL', 'NET']
+Lives remaining:  3
+held_out result: chain_complete
+
+Updating setter strategy notes...
+Strategy notes updated to version 2.
+Updated notes: Prefer common, direct associations with a single clear answer, such as a sport to its governing body or venue, a well-known character to their famous setting or item, or a famous place to its most familiar feature. Chains with strong fan-favourite or textbook links (CIRCUS to CLOWN, PIRATE to TREASURE, MOUNTAIN to EVEREST) were completed, while those needing a second-order or niche detail stalled. Guessers struggled most when the target was a generic follow-on word (TEAM to GOAL, BOWL to RING, CHOCOLATE to APPLE) and drifted to alternatives that fit as well or better: pepper, bottle, pizza, bee, track. Avoid links where a common, concrete alternative sits on the board; check whether a plausible competitor (food, animal, everyday object) could fit before committing. Be cautious with lexical or wordplay links (SPIDER to VAMPIRE, ORANGE to MILK). Treat these as tentative, drawn from one batch of games.
+
+Batch 2, paired: 4/10 chains completed, 1 skipped or errored.
+
+Batch 2, held_out: 4/10 chains completed, 1 skipped or errored.
+
+========== Batch 3 ==========
+
+Batch 3, Game 1/10
+Hidden chain: CINDERELLA -> GLASS -> CASTLE -> QUEEN -> EGYPT
+
+Playing as paired using claude-haiku-5-5
+Clue:  CINDERELLA
+Chosen word:  GLASS
+Reason:  Cinderella's famous glass slipper is the most iconic object associated with the story.
+Outcome:  correct
+Clue:  GLASS
+Chosen word:  CANDLE
+Reason:  A candle is often burned inside a glass holder, so the two are commonly paired.
+Outcome:  wrong
+Clue:  GLASS
+Chosen word:  QUEEN
+Reason:  The Red Queen appears in 'Through the Looking-Glass,' a well-known story built around a looking glass.
+Outcome:  wrong
+Clue:  GLASS
+Chosen word:  CASTLE
+Reason:  A glass castle is a familiar image, and 'The Glass Castle' is a well-known memoir.
+Outcome:  correct
+Clue:  CASTLE
+Chosen word:  BRIDGE
+Reason:  A castle is commonly associated with a drawbridge that spans its moat.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['CINDERELLA', 'GLASS', 'CASTLE', 'QUEEN', 'EGYPT']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  CINDERELLA
+Chosen word:  GLASS
+Reason:  Cinderella is most famously associated with the glass slipper.
+Outcome:  correct
+Clue:  GLASS
+Chosen word:  BRIDGE
+Reason:  The phrase "glass bridge" (or glass-bottom bridge) is a common, widely known tourist/architectural feature, making BRIDGE the most direct association with GLASS.
+Outcome:  wrong
+Clue:  GLASS
+Chosen word:  CANDLE
+Reason:  Candles are commonly placed in glass holders or sold in glass jars, so 'glass' and 'candle' are a natural, everyday pairing.
+Outcome:  wrong
+Clue:  GLASS
+Chosen word:  CASTLE
+Reason:  'The Glass Castle' is a well-known phrase/title, making CASTLE a natural direct associate of GLASS.
+Outcome:  correct
+Clue:  CASTLE
+Chosen word:  QUEEN
+Reason:  A queen is traditionally associated with a castle as the royal resident; strong, direct monarchy connection.
+Outcome:  correct
+Clue:  QUEEN
+Chosen word:  EGYPT
+Reason:  Cleopatra and other famous monarchs make 'queen' strongly and commonly associated with ancient Egypt.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['CINDERELLA', 'GLASS', 'CASTLE', 'QUEEN', 'EGYPT']
+Lives remaining:  1
+held_out result: chain_complete
+
+Batch 3, Game 2/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: ALICE -> BOTTLE -> GLASS -> SPY -> BRIDGE
+
+Playing as paired using claude-haiku-5-5
+Clue:  ALICE
+Chosen word:  BOOK
+Reason:  Alice is the title character of Lewis Carroll's book 'Alice's Adventures in Wonderland.'
+Outcome:  wrong
+Clue:  ALICE
+Chosen word:  BOTTLE
+Reason:  In Alice in Wonderland, Alice finds a bottle labeled 'DRINK ME' that shrinks her.
+Outcome:  correct
+Clue:  BOTTLE
+Chosen word:  GLASS
+Reason:  A bottle is most commonly made of glass.
+Outcome:  correct
+Clue:  GLASS
+Chosen word:  SPY
+Reason:  A spyglass is a small telescope, a direct compound with glass.
+Outcome:  correct
+Clue:  SPY
+Chosen word:  BRIDGE
+Reason:  The film 'Bridge of Spies' is a well-known spy story, linking BRIDGE directly to SPY.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['ALICE', 'BOTTLE', 'GLASS', 'SPY', 'BRIDGE']
+Lives remaining:  2
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  ALICE
+Chosen word:  BOOK
+Reason:  Alice is the title character of the famous book 'Alice's Adventures in Wonderland' (and 'Through the Looking-Glass'), making BOOK the most direct association.
+Outcome:  wrong
+Clue:  ALICE
+Chosen word:  QUEEN
+Reason:  Alice is famously associated with the Queen of Hearts in Lewis Carroll's Alice in Wonderland.
+Outcome:  wrong
+Clue:  ALICE
+Chosen word:  GLASS
+Reason:  Alice is famously associated with the book 'Through the Looking-Glass,' making 'glass' a direct, common link to Alice.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['ALICE', 'BOTTLE', 'GLASS', 'SPY', 'BRIDGE']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 3, Game 3/10
+Hidden chain: SNOW WHITE -> MIRROR -> QUEEN -> CAKE -> CHEESE
+
+Playing as paired using claude-haiku-5-5
+Clue:  SNOW WHITE
+Chosen word:  MIRROR
+Reason:  In the Snow White story, the Evil Queen repeatedly asks her magic mirror, 'Mirror, mirror on the wall...', making it the most iconic object tied to the tale.
+Outcome:  correct
+Clue:  MIRROR
+Chosen word:  QUEEN
+Reason:  The Evil Queen in Snow White consults her magic mirror ('Mirror, mirror on the wall'), the most famous mirror association.
+Outcome:  correct
+Clue:  QUEEN
+Chosen word:  CAKE
+Reason:  A queen cake is a traditional British sponge cake, so CAKE is the most direct link to QUEEN.
+Outcome:  correct
+Clue:  CAKE
+Chosen word:  CHEESE
+Reason:  Cheesecake is a well-known cake, so 'cheese' is the most direct compound association with 'cake'.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['SNOW WHITE', 'MIRROR', 'QUEEN', 'CAKE', 'CHEESE']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  SNOW WHITE
+Chosen word:  MIRROR
+Reason:  The Magic Mirror is a central, iconic object in the Snow White fairy tale ('Mirror, mirror on the wall').
+Outcome:  correct
+Clue:  MIRROR
+Chosen word:  QUEEN
+Reason:  Famous phrase 'Mirror, mirror on the wall' is spoken by the (evil) queen in Snow White.
+Outcome:  correct
+Clue:  QUEEN
+Chosen word:  CAIRO
+Reason:  Cleopatra and other famous queens are associated with Egypt; Cairo is the capital of Egypt, a natural queen→Egypt link.
+Outcome:  wrong
+Clue:  QUEEN
+Chosen word:  CAKE
+Reason:  Queen Victoria is famously associated with the 'Victoria sponge' (Victoria cake), making cake a common, direct association with a queen.
+Outcome:  correct
+Clue:  CAKE
+Chosen word:  CHEESE
+Reason:  Combines with 'cake' to form 'cheesecake', a common and direct cake type.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['SNOW WHITE', 'MIRROR', 'QUEEN', 'CAKE', 'CHEESE']
+Lives remaining:  2
+held_out result: chain_complete
+
+Batch 3, Game 4/10
+Hidden chain: GAME -> CHESS -> KNIGHT -> DRAGON -> WIZARD
+
+Playing as paired using claude-haiku-5-5
+Clue:  GAME
+Chosen word:  CHESS
+Reason:  Chess is a classic board game, making it the most direct and widely understood association with the clue GAME.
+Outcome:  correct
+Clue:  CHESS
+Chosen word:  KNIGHT
+Reason:  A knight is one of the six pieces in chess, moving in an L-shape.
+Outcome:  correct
+Clue:  KNIGHT
+Chosen word:  DRAGON
+Reason:  Knights are traditionally known for slaying dragons in medieval legend and fantasy.
+Outcome:  correct
+Clue:  DRAGON
+Chosen word:  SNAKE
+Reason:  Dragons are often depicted as large, serpent-like creatures, and in Chinese tradition the dragon and snake are closely linked as zodiac animals.
+Outcome:  wrong
+Clue:  DRAGON
+Chosen word:  WIZARD
+Reason:  Dragons and wizards are both classic fantasy figures, often appearing together in fairy tales and fantasy stories.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['GAME', 'CHESS', 'KNIGHT', 'DRAGON', 'WIZARD']
+Lives remaining:  2
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  GAME
+Chosen word:  CHESS
+Reason:  Chess is a widely recognized classic game (a board/strategy game), making it the most direct association with the clue 'GAME'.
+Outcome:  correct
+Clue:  CHESS
+Chosen word:  KNIGHT
+Reason:  The knight is a standard chess piece (the horse) and is a primary, commonly recognized element of the game.
+Outcome:  correct
+Clue:  KNIGHT
+Chosen word:  DRAGON
+Reason:  Classic, widely known association—medieval knights are commonly depicted fighting or slaying dragons in legends and fairy tales.
+Outcome:  correct
+Clue:  DRAGON
+Chosen word:  SNAKE
+Reason:  Dragons are commonly depicted as large, serpent-like reptiles; 'snake' is a natural, widely understood association with a dragon.
+Outcome:  wrong
+Clue:  DRAGON
+Chosen word:  WIZARD
+Reason:  Dragons are classic fantasy creatures frequently paired with wizards in myths, literature, and games, making 'wizard' the most natural association.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['GAME', 'CHESS', 'KNIGHT', 'DRAGON', 'WIZARD']
+Lives remaining:  2
+held_out result: chain_complete
+
+Batch 3, Game 5/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: PHARAOH -> PYRAMID -> EGYPT -> SNAKE -> HORSE
+
+Playing as paired using claude-haiku-5-5
+Clue:  PHARAOH
+Chosen word:  EGYPT
+Reason:  Pharaohs were the rulers of ancient Egypt, so Egypt is the most direct association.
+Outcome:  wrong
+Clue:  PHARAOH
+Chosen word:  PYRAMID
+Reason:  Pharaohs were ancient Egyptian rulers, and pyramids were built as their tombs.
+Outcome:  correct
+Clue:  PYRAMID
+Chosen word:  PARIS
+Reason:  The Louvre in Paris is famous for its glass pyramid, the most widely recognized modern pyramid association among the options.
+Outcome:  wrong
+Clue:  PYRAMID
+Chosen word:  CROWN
+Reason:  Pyramids are tied to ancient Egyptian pharaohs, who wore crowns, making this the most natural though still loose link among the options.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['PHARAOH', 'PYRAMID', 'EGYPT', 'SNAKE', 'HORSE']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  PHARAOH
+Chosen word:  EGYPT
+Reason:  Pharaohs are the ancient rulers of Egypt; the term is most directly associated with that country.
+Outcome:  wrong
+Clue:  PHARAOH
+Chosen word:  PYRAMID
+Reason:  Pharaohs are most directly associated with Egyptian pyramids, built as monumental tombs and symbols of their rule.
+Outcome:  correct
+Clue:  PYRAMID
+Chosen word:  PARIS
+Reason:  The Louvre's glass Pyramid is an iconic, widely recognized pyramid in Paris.
+Outcome:  wrong
+Clue:  PYRAMID
+Chosen word:  CROWN
+Reason:  Pyramids are tombs of Egyptian pharaohs, and the crown is the common symbol of royalty/ pharaohs associated with Egyptian pyramids.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['PHARAOH', 'PYRAMID', 'EGYPT', 'SNAKE', 'HORSE']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 3, Game 6/10
+Hidden chain: EGYPT -> PYRAMID -> SAHARA -> AMAZON -> OCEAN
+
+Playing as paired using claude-haiku-5-5
+Clue:  EGYPT
+Chosen word:  PYRAMID
+Reason:  The Pyramids of Giza are among Egypt's most famous landmarks and are closely associated with the country.
+Outcome:  correct
+Clue:  PYRAMID
+Chosen word:  SAHARA
+Reason:  The Great Pyramids of Giza stand on the edge of the Sahara Desert in Egypt.
+Outcome:  correct
+Clue:  SAHARA
+Chosen word:  AMAZON
+Reason:  Sahara and Amazon are both world-famous natural landmarks, the Sahara being the largest hot desert and the Amazon the largest rainforest.
+Outcome:  correct
+Clue:  AMAZON
+Chosen word:  APPLE
+Reason:  Amazon and Apple are both major technology companies and are commonly paired as big tech giants.
+Outcome:  wrong
+Clue:  AMAZON
+Chosen word:  OCEAN
+Reason:  The Amazon River, one of the world's largest, flows into the Atlantic Ocean.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['EGYPT', 'PYRAMID', 'SAHARA', 'AMAZON', 'OCEAN']
+Lives remaining:  2
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  EGYPT
+Chosen word:  PYRAMID
+Reason:  Pyramids are iconic ancient monuments most strongly and commonly associated with Egypt (e.g., the Great Pyramid of Giza).
+Outcome:  correct
+Clue:  PYRAMID
+Chosen word:  SAHARA
+Reason:  Egyptian pyramids are located in the Sahara desert, making Sahara the most direct geographic association with pyramid.
+Outcome:  correct
+Clue:  SAHARA
+Chosen word:  STORM
+Reason:  Sahara is known for sandstorms; 'sandstorm' is a common, direct association.
+Outcome:  wrong
+Clue:  SAHARA
+Chosen word:  MARATHON
+Reason:  The famous Marathon des Sables is an ultramarathon held in the Sahara Desert, a direct and common association.
+Outcome:  wrong
+Clue:  SAHARA
+Chosen word:  FOX
+Reason:  The fennec, known as the 'desert fox' (and 'Desert Fox' nickname for Rommel), is strongly associated with the Sahara Desert.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['EGYPT', 'PYRAMID', 'SAHARA', 'AMAZON', 'OCEAN']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 3, Game 7/10
+Hidden chain: COW -> MILK -> GLASS -> BOWL -> HONEY
+
+Playing as paired using claude-haiku-5-5
+Clue:  COW
+Chosen word:  MILK
+Reason:  Cows produce milk, the most direct and commonly understood association with a cow.
+Outcome:  correct
+Clue:  MILK
+Chosen word:  GLASS
+Reason:  Milk is most commonly served and drunk from a glass.
+Outcome:  correct
+Clue:  GLASS
+Chosen word:  BOWL
+Reason:  A bowl is a common household item often made of glass, so it is the most direct association with the clue.
+Outcome:  correct
+Clue:  BOWL
+Chosen word:  TEAM
+Reason:  A bowl is a postseason college football game, and each bowl game is contested between two teams.
+Outcome:  wrong
+Clue:  BOWL
+Chosen word:  SALT
+Reason:  A salt bowl (salt cellar) is a common dining table item, so SALT is the most natural direct association with BOWL.
+Outcome:  wrong
+Clue:  BOWL
+Chosen word:  DRUM
+Reason:  A drum shares the hollow, rounded body of a bowl, and both are common hollow vessels or instruments.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['COW', 'MILK', 'GLASS', 'BOWL', 'HONEY']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  COW
+Chosen word:  MILK
+Reason:  Milk is the primary product produced by cows; the most direct and common association.
+Outcome:  correct
+Clue:  MILK
+Chosen word:  GLASS
+Reason:  Milk is commonly served in a glass (the phrase 'a glass of milk' is a direct, everyday association).
+Outcome:  correct
+Clue:  GLASS
+Chosen word:  BASKETBALL
+Reason:  Basketball backboards are commonly made of tempered glass and players often refer to "the glass" or use bank shots off the glass.
+Outcome:  wrong
+Clue:  GLASS
+Chosen word:  BOWL
+Reason:  A 'glass bowl' is a common, widely used object (e.g., mixing or serving bowl made of glass).
+Outcome:  correct
+Clue:  BOWL
+Chosen word:  TEAM
+Reason:  Bowl commonly refers to football bowl games (e.g., Super Bowl, college bowls), which directly involve teams.
+Outcome:  wrong
+Clue:  BOWL
+Chosen word:  DRUM
+Reason:  A bowl can be a musical 'singing bowl' and both bowls and drums are round percussion instruments struck to produce resonant sound.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['COW', 'MILK', 'GLASS', 'BOWL', 'HONEY']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 3, Game 8/10
+Hidden chain: OCEAN -> WHALE -> SHARK -> CRAB -> SALT
+
+Playing as paired using claude-haiku-5-5
+Clue:  OCEAN
+Chosen word:  WHALE
+Reason:  Whales are among the most iconic animals of the ocean, so the connection is direct and widely recognized.
+Outcome:  correct
+Clue:  WHALE
+Chosen word:  SHARK
+Reason:  Both are large marine animals, so SHARK is the most direct association with WHALE.
+Outcome:  correct
+Clue:  SHARK
+Chosen word:  CRAB
+Reason:  Sharks and crabs are both sea creatures, so they are the most directly associated pair among the options.
+Outcome:  correct
+Clue:  CRAB
+Chosen word:  SALT
+Reason:  Crabs are marine creatures that live in salt water, and salt is strongly tied to seafood and the ocean.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['OCEAN', 'WHALE', 'SHARK', 'CRAB', 'SALT']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  OCEAN
+Chosen word:  SALT
+Reason:  Oceans are commonly described as salt water; 'salt' is the direct, widely understood property of ocean water.
+Outcome:  wrong
+Clue:  OCEAN
+Chosen word:  SHARK
+Reason:  Sharks are iconic marine animals and are strongly and directly associated with the ocean.
+Outcome:  wrong
+Clue:  OCEAN
+Chosen word:  WHALE
+Reason:  Whales are large marine mammals that live in the ocean — a direct, common association.
+Outcome:  correct
+Clue:  WHALE
+Chosen word:  MILK
+Reason:  Whales are mammals that nurse their young, producing milk.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['OCEAN', 'WHALE', 'SHARK', 'CRAB', 'SALT']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 3, Game 9/10
+Hidden chain: JAPAN -> TOKYO -> SUSHI -> CRAB -> SKATE
+
+Playing as paired using claude-haiku-5-5
+Clue:  JAPAN
+Chosen word:  TOKYO
+Reason:  Tokyo is the capital city of Japan, the most direct association with the clue.
+Outcome:  correct
+Clue:  TOKYO
+Chosen word:  SUSHI
+Reason:  Sushi is a iconic Japanese food, and Tokyo is Japan's capital city.
+Outcome:  correct
+Clue:  SUSHI
+Chosen word:  CRAB
+Reason:  Crab, often as imitation crab (kani), is a common sushi ingredient, most notably in the California roll.
+Outcome:  correct
+Clue:  CRAB
+Chosen word:  SKATE
+Reason:  Crabs and skates are both sea creatures and common seafood, so they share the closest direct association among the options.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['JAPAN', 'TOKYO', 'SUSHI', 'CRAB', 'SKATE']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  JAPAN
+Chosen word:  TOKYO
+Reason:  Tokyo is the capital and most internationally recognized city of Japan, a direct and common association.
+Outcome:  correct
+Clue:  TOKYO
+Chosen word:  SUSHI
+Reason:  Tokyo is Japan's capital and is widely associated with sushi—the iconic Japanese cuisine and many famous sushi restaurants are found there.
+Outcome:  correct
+Clue:  SUSHI
+Chosen word:  CRAB
+Reason:  Crab (real or imitation kani) is a common and recognizable sushi ingredient used in many rolls (e.g., California roll).
+Outcome:  correct
+Clue:  CRAB
+Chosen word:  ISLAND
+Reason:  Crabs are commonly found on islands and beaches (and 'Crab Island' is a familiar place name), making island a natural, direct association.
+Outcome:  wrong
+Clue:  CRAB
+Chosen word:  LEMON
+Reason:  Lemon is a common, widely recognized accompaniment for crab and other seafood (people squeeze lemon on crab dishes).
+Outcome:  wrong
+Clue:  CRAB
+Chosen word:  SKATE
+Reason:  Both are marine animals/seafood — a skate is a fish and a crab is a crustacean, commonly associated together as sea creatures/seafood.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['JAPAN', 'TOKYO', 'SUSHI', 'CRAB', 'SKATE']
+Lives remaining:  1
+held_out result: chain_complete
+
+Batch 3, Game 10/10
+Setter attempt 1 failed: Could not parse setter JSON: Unterminated string starting at: line 7 column 9 (char 254)
+Hidden chain: PRINCESS -> CROWN -> GLASS -> MIRROR -> CANDLE
+
+Playing as paired using claude-haiku-5-5
+Clue:  PRINCESS
+Chosen word:  CROWN
+Reason:  A princess is a royal who traditionally wears a crown as a symbol of her status.
+Outcome:  correct
+Clue:  CROWN
+Chosen word:  LONDON
+Reason:  The Crown Jewels, including the royal crowns, are kept at the Tower of London.
+Outcome:  wrong
+Clue:  CROWN
+Chosen word:  EGYPT
+Reason:  Ancient Egyptian pharaohs wore famous crowns, such as the Pschent and the Nemes headdress, so Egypt is the most natural link to crown.
+Outcome:  wrong
+Clue:  CROWN
+Chosen word:  GLASS
+Reason:  Crown glass is a common type of optical glass, and 'crown' is a standard term in glassmaking.
+Outcome:  correct
+Clue:  GLASS
+Chosen word:  MIRROR
+Reason:  A mirror is made of glass, and glass is the material most directly associated with mirrors.
+Outcome:  correct
+Clue:  MIRROR
+Chosen word:  CANDLE
+Reason:  Candles and mirrors are both common home decor items, often placed together to reflect and amplify light.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['PRINCESS', 'CROWN', 'GLASS', 'MIRROR', 'CANDLE']
+Lives remaining:  1
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  PRINCESS
+Chosen word:  CROWN
+Reason:  A princess is commonly associated with a crown as the primary symbol of royalty and rank.
+Outcome:  correct
+Clue:  CROWN
+Chosen word:  LONDON
+Reason:  The crown is a principal symbol of the British monarchy and the Crown Jewels and royal institutions are famously associated with London.
+Outcome:  wrong
+Clue:  CROWN
+Chosen word:  EGYPT
+Reason:  Crown naturally evokes Egyptian pharaohs and their distinctive crowns (e.g., the double crown, Tutankhamun), making Egypt the strongest direct association.
+Outcome:  wrong
+Clue:  CROWN
+Chosen word:  MUMMY
+Reason:  Pharaohs—who are commonly associated with mummies—wore crowns, making crown and mummy naturally linked via Egyptian royalty.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['PRINCESS', 'CROWN', 'GLASS', 'MIRROR', 'CANDLE']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Updating setter strategy notes...
+Strategy notes updated to version 3.
+Updated notes: Prefer common, direct associations with a single clear answer: a famous character to their iconic object or setting, a place to its best-known feature, or a material to its everyday product. Strong, widely known links (CINDERELLA to GLASS, GAME to CHESS, OCEAN to WHALE, JAPAN to TOKYO) were completed. Links that depended on a generic follow-on word (BOWL to HONEY, PYRAMID to EGYPT, GLASS to BOWL) stalled. Guessers drifted to plausible competitors such as salt, drum, team, Paris, and crown. Before committing, check whether a concrete, common alternative (food, animal, object, or famous proper noun) also fits the clue, and prefer a link where the intended answer is clearly the strongest. Be cautious with compound or wordplay links (GLASS to SPY via spyglass, AMAZON to OCEAN) and with multi-step associations that need a niche detail. Treat these notes as tentative, drawn from one batch of ten games.
+
+Batch 3, paired: 7/10 chains completed, 0 skipped or errored.
+
+Batch 3, held_out: 4/10 chains completed, 0 skipped or errored.
+
+========== Batch 4 ==========
+
+Batch 4, Game 1/10
+Hidden chain: TENNIS -> RACKET -> COURT -> BASKETBALL -> BOXING
+
+Playing as paired using claude-haiku-5-5
+Clue:  TENNIS
+Chosen word:  RACKET
+Reason:  A racket is the equipment used to hit the ball in tennis.
+Outcome:  correct
+Clue:  RACKET
+Chosen word:  COURT
+Reason:  A racket is the equipment used in tennis, which is played on a court.
+Outcome:  correct
+Clue:  COURT
+Chosen word:  BASKETBALL
+Reason:  A basketball game is played on a court, so this is the most direct and widely understood association with COURT.
+Outcome:  correct
+Clue:  BASKETBALL
+Chosen word:  BOXING
+Reason:  Boxing is a major sport, like basketball, and the most direct sports association among the available words.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['TENNIS', 'RACKET', 'COURT', 'BASKETBALL', 'BOXING']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  TENNIS
+Chosen word:  RACKET
+Reason:  A racket is the primary piece of equipment used to play tennis (common, direct association).
+Outcome:  correct
+Clue:  RACKET
+Chosen word:  COURT
+Reason:  Rackets are primarily used in court sports (tennis, squash), so 'court' is the most direct, common association.
+Outcome:  correct
+Clue:  COURT
+Chosen word:  BASKETBALL
+Reason:  A basketball is played on a court; 'basketball court' is a common, direct phrase.
+Outcome:  correct
+Clue:  BASKETBALL
+Chosen word:  HORSE
+Reason:  HORSE is a common basketball shooting game where players match shots (the game is called "HORSE").
+Outcome:  wrong
+Clue:  BASKETBALL
+Chosen word:  BOXING
+Reason:  Both are major competitive sports; additionally 'box out' is a common basketball rebounding term linking the words.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['TENNIS', 'RACKET', 'COURT', 'BASKETBALL', 'BOXING']
+Lives remaining:  2
+held_out result: chain_complete
+
+Batch 4, Game 2/10
+Setter attempt 1 failed: The setter returned no text response.
+Setter attempt 2 failed: The setter returned no text response.
+Hidden chain: GAME -> CHESS -> CLOCK -> CANDLE -> HONEY
+
+Playing as paired using claude-haiku-5-5
+Clue:  GAME
+Chosen word:  CHESS
+Reason:  Chess is a well-known board game, so it is the most direct match for the clue GAME.
+Outcome:  correct
+Clue:  CHESS
+Chosen word:  CLOCK
+Reason:  Competitive chess games are timed with a chess clock, a very direct association.
+Outcome:  correct
+Clue:  CLOCK
+Chosen word:  CANDLE
+Reason:  Candles were historically used as timekeepers, burning down at a steady rate to mark the hours, much like a clock.
+Outcome:  correct
+Clue:  CANDLE
+Chosen word:  HONEY
+Reason:  Beeswax candles are made from the same beehive products that produce honey, so the two are closely linked.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['GAME', 'CHESS', 'CLOCK', 'CANDLE', 'HONEY']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  GAME
+Chosen word:  CHESS
+Reason:  Chess is a classic, widely known game; the phrase 'a game of chess' is a direct, natural association.
+Outcome:  correct
+Clue:  CHESS
+Chosen word:  CLOCK
+Reason:  A chess clock is the standard timer used in chess games to track each player's allotted time.
+Outcome:  correct
+Clue:  CLOCK
+Chosen word:  BASKETBALL
+Reason:  Basketball prominently features a 'shot clock' (and game clock), so 'clock' is commonly associated with the sport.
+Outcome:  wrong
+Clue:  CLOCK
+Chosen word:  CANDLE
+Reason:  A 'candle clock' is a well-known historical timekeeping method—candles are commonly associated with measuring time and clocks.
+Outcome:  correct
+Clue:  CANDLE
+Chosen word:  ROSE
+Reason:  Candles and roses are commonly paired for romantic settings and ceremonies (rose-scented candles and candlelit rose arrangements).
+Outcome:  wrong
+Clue:  CANDLE
+Chosen word:  HONEY
+Reason:  Bees produce beeswax used to make candles, and honey is another common bee product—direct, natural association with candles.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['GAME', 'CHESS', 'CLOCK', 'CANDLE', 'HONEY']
+Lives remaining:  1
+held_out result: chain_complete
+
+Batch 4, Game 3/10
+Setter attempt 1 failed: The setter returned no text response.
+Setter attempt 2 failed: Could not parse setter JSON: Unterminated string starting at: line 6 column 9 (char 209)
+Hidden chain: THAMES -> RIVER -> LONDON -> CLOCK -> ROCKET
+
+Playing as paired using claude-haiku-5-5
+Clue:  THAMES
+Chosen word:  RIVER
+Reason:  The Thames is a river, flowing through London in England.
+Outcome:  correct
+Clue:  RIVER
+Chosen word:  LONDON
+Reason:  London is a major city built along the River Thames.
+Outcome:  correct
+Clue:  LONDON
+Chosen word:  CLOCK
+Reason:  Big Ben, the famous clock tower, is one of London's most iconic landmarks.
+Outcome:  correct
+Clue:  CLOCK
+Chosen word:  BASKETBALL
+Reason:  Basketball games use a shot clock and game clock, so 'clock' is directly tied to the sport.
+Outcome:  wrong
+Clue:  CLOCK
+Chosen word:  ORANGE
+Reason:  "Clockwork Orange" is a well-known phrase and film title that pairs directly with CLOCK.
+Outcome:  wrong
+Clue:  CLOCK
+Chosen word:  KEY
+Reason:  Old wind-up clocks were set and wound with a small key, making KEY the most direct association with CLOCK.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['THAMES', 'RIVER', 'LONDON', 'CLOCK', 'ROCKET']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  THAMES
+Chosen word:  RIVER
+Reason:  The Thames is primarily known as a river (the River Thames) in England, making 'RIVER' the most direct association.
+Outcome:  correct
+Clue:  RIVER
+Chosen word:  LONDON
+Reason:  London is famously situated on the River Thames, a common and immediate river association.
+Outcome:  correct
+Clue:  LONDON
+Chosen word:  CLOCK
+Reason:  Big Ben is an iconic London clock tower, making 'clock' a natural, common association with London.
+Outcome:  correct
+Clue:  CLOCK
+Chosen word:  ORANGE
+Reason:  Direct cultural association with the novel/film title 'A Clockwork Orange' which links CLOCK to ORANGE
+Outcome:  wrong
+Clue:  CLOCK
+Chosen word:  BASKETBALL
+Reason:  Basketball has a direct, commonly used term 'shot clock' (and relies on a game clock), making 'clock' strongly associated with basketball.
+Outcome:  wrong
+Clue:  CLOCK
+Chosen word:  KEY
+Reason:  Many clocks are wound with a key; 'clock key' (winding key) is a common direct association.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['THAMES', 'RIVER', 'LONDON', 'CLOCK', 'ROCKET']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 4, Game 4/10
+Hidden chain: VALENTINE -> HEART -> CHOCOLATE -> CAKE -> MOON
+
+Playing as paired using claude-haiku-5-5
+Clue:  VALENTINE
+Chosen word:  HEART
+Reason:  Valentine's Day is strongly associated with hearts as the iconic romantic symbol, often shown on cards and gifts.
+Outcome:  correct
+Clue:  HEART
+Chosen word:  CHOCOLATE
+Reason:  Chocolate is strongly associated with hearts, especially heart-shaped boxes and chocolates given on Valentine's Day.
+Outcome:  correct
+Clue:  CHOCOLATE
+Chosen word:  CAKE
+Reason:  Chocolate cake is one of the most common and direct pairings with chocolate.
+Outcome:  correct
+Clue:  CAKE
+Chosen word:  MOON
+Reason:  A mooncake is a traditional Chinese pastry, so MOON pairs directly with CAKE as a common compound.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['VALENTINE', 'HEART', 'CHOCOLATE', 'CAKE', 'MOON']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  VALENTINE
+Chosen word:  HEART
+Reason:  Valentine's Day is universally associated with hearts as the primary symbol of love and affection.
+Outcome:  correct
+Clue:  HEART
+Chosen word:  CHOCOLATE
+Reason:  Hearts are commonly associated with chocolate (heart-shaped chocolates, Valentine's candy), a direct and widely recognized link.
+Outcome:  correct
+Clue:  CHOCOLATE
+Chosen word:  CAKE
+Reason:  Chocolate cake is a very common, direct pairing—a widely recognized dessert combining chocolate and cake.
+Outcome:  correct
+Clue:  CAKE
+Chosen word:  MOON
+Reason:  Mooncake is a common, direct association — a well-known type of cake tied to the moon (Mid-Autumn Festival).
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['VALENTINE', 'HEART', 'CHOCOLATE', 'CAKE', 'MOON']
+Lives remaining:  3
+held_out result: chain_complete
+
+Batch 4, Game 5/10
+Hidden chain: TEQUILA -> SALT -> LEMON -> ORANGE -> PEACH
+
+Playing as paired using claude-haiku-5-5
+Clue:  TEQUILA
+Chosen word:  SALT
+Reason:  Tequila is commonly served with salt on the rim of the glass, often alongside lime, making salt the most direct association.
+Outcome:  correct
+Clue:  SALT
+Chosen word:  LEMON
+Reason:  Salt and lemon are a classic pairing, such as in tequila shots, salted lemon wedges, and seasoning dishes.
+Outcome:  correct
+Clue:  LEMON
+Chosen word:  ORANGE
+Reason:  Lemon and orange are both citrus fruits.
+Outcome:  correct
+Clue:  ORANGE
+Chosen word:  PEACH
+Reason:  Orange and peach are both common fruits and share a similar warm orange-pink color.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['TEQUILA', 'SALT', 'LEMON', 'ORANGE', 'PEACH']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  TEQUILA
+Chosen word:  SALT
+Reason:  Tequila shots are commonly served with salt (lick-sip-bite ritual), making salt a strong, natural association.
+Outcome:  correct
+Clue:  SALT
+Chosen word:  LEMON
+Reason:  Salt and lemon are a common pair used to season foods and drinks (e.g., on seafood, fruit, or drink rims).
+Outcome:  correct
+Clue:  LEMON
+Chosen word:  ORANGE
+Reason:  Lemon and orange are both common citrus fruits and are naturally paired together (both citrus, similar uses and flavors).
+Outcome:  correct
+Clue:  ORANGE
+Chosen word:  BASKETBALL
+Reason:  Basketballs are commonly orange in color, making a direct and widely recognized association.
+Outcome:  wrong
+Clue:  ORANGE
+Chosen word:  PEACH
+Reason:  Peach is a fruit with orange-colored flesh; both are fruits and commonly associated by color.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['TEQUILA', 'SALT', 'LEMON', 'ORANGE', 'PEACH']
+Lives remaining:  2
+held_out result: chain_complete
+
+Batch 4, Game 6/10
+Hidden chain: PIRATE -> TREASURE -> DIAMOND -> SNAKE -> LADDER
+
+Playing as paired using claude-haiku-5-5
+Clue:  PIRATE
+Chosen word:  TREASURE
+Reason:  Pirates are famously associated with hunting and hoarding treasure, such as buried gold and jewels.
+Outcome:  correct
+Clue:  TREASURE
+Chosen word:  DIAMOND
+Reason:  A diamond is a precious gem, one of the most classic examples of a valuable treasure.
+Outcome:  correct
+Clue:  DIAMOND
+Chosen word:  SNAKE
+Reason:  A diamondback is a common snake, so 'diamond' naturally links to snake.
+Outcome:  correct
+Clue:  SNAKE
+Chosen word:  LADDER
+Reason:  Snakes and Ladders is a classic board game where snakes send players back down the board.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['PIRATE', 'TREASURE', 'DIAMOND', 'SNAKE', 'LADDER']
+Lives remaining:  3
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  PIRATE
+Chosen word:  TREASURE
+Reason:  Pirates are commonly associated with seeking and burying treasure; 'treasure' is the most direct, widely understood link to 'pirate.'
+Outcome:  correct
+Clue:  TREASURE
+Chosen word:  DIAMOND
+Reason:  Diamonds are classic precious jewels and a common form of treasure/booty.
+Outcome:  correct
+Clue:  DIAMOND
+Chosen word:  SNAKE
+Reason:  Diamondback rattlesnake — 'diamond' is commonly used in the name/pattern (e.g., Arizona Diamondbacks / diamondback rattlesnake).
+Outcome:  correct
+Clue:  SNAKE
+Chosen word:  LADDER
+Reason:  Snakes and Ladders is a classic, directly linked pairing—snakes are paired with ladders in the well-known board game.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['PIRATE', 'TREASURE', 'DIAMOND', 'SNAKE', 'LADDER']
+Lives remaining:  3
+held_out result: chain_complete
+
+Batch 4, Game 7/10
+Setter attempt 1 failed: The setter returned no text response.
+Setter attempt 2 failed: The setter returned no text response.
+Setter attempt 3 failed: The setter returned no text response.
+Skipped game: The setter returned no text response.
+
+Batch 4, Game 8/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: FANTASY -> WIZARD -> DRAGON -> KNIGHT -> BOOK
+
+Playing as paired using claude-haiku-5-5
+Clue:  FANTASY
+Chosen word:  WIZARD
+Reason:  Wizards are a classic element of fantasy stories, such as Harry Potter and The Lord of the Rings.
+Outcome:  correct
+Clue:  WIZARD
+Chosen word:  DRAGON
+Reason:  Wizards and dragons are classic fantasy companions, as in many fairy tales and fantasy stories.
+Outcome:  correct
+Clue:  DRAGON
+Chosen word:  KNIGHT
+Reason:  Knights are the classic dragon slayers in legend, such as St. George and the dragon.
+Outcome:  correct
+Clue:  KNIGHT
+Chosen word:  ROBOT
+Reason:  A knight in armor is often likened to a robot, and 'Knight Rider' and robot-themed knights link the two ideas.
+Outcome:  wrong
+Clue:  KNIGHT
+Chosen word:  BOOK
+Reason:  Knights are classic subjects of medieval books and tales, such as romances and chivalric stories.
+Outcome:  chain_complete
+Final result:  chain_complete
+Hidden chain:  ['FANTASY', 'WIZARD', 'DRAGON', 'KNIGHT', 'BOOK']
+Lives remaining:  2
+paired result: chain_complete
+
+Playing as held_out using gpt-5-mini
+Clue:  FANTASY
+Chosen word:  DRAGON
+Reason:  Dragons are an iconic and widely recognized element of the fantasy genre, more directly evoked by the single-word clue than the other options.
+Outcome:  wrong
+Clue:  FANTASY
+Chosen word:  WIZARD
+Reason:  Wizards and magic-users are iconic, central figures in fantasy stories and settings.
+Outcome:  correct
+Clue:  WIZARD
+Chosen word:  BOOK
+Reason:  Wizards are commonly associated with spellbooks and magic books; 'book' is the natural, direct link to wizardry.
+Outcome:  wrong
+Clue:  WIZARD
+Chosen word:  KNIGHT
+Reason:  Wizard and knight are classic, directly paired fantasy archetypes (e.g., medieval/fantasy stories and role‑playing games).
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['FANTASY', 'WIZARD', 'DRAGON', 'KNIGHT', 'BOOK']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 4, Game 9/10
+Setter attempt 1 failed: The setter returned no text response.
+Hidden chain: HALLOWEEN -> CANDLE -> GHOST -> VAMPIRE -> WIZARD
+
+Playing as paired using claude-haiku-5-5
+Clue:  HALLOWEEN
+Chosen word:  VAMPIRE
+Reason:  Vampires are a classic Halloween monster, commonly featured in costumes and decorations during the holiday.
+Outcome:  wrong
+Clue:  HALLOWEEN
+Chosen word:  GHOST
+Reason:  Ghosts are a classic Halloween figure, widely associated with the holiday's spooky decorations and costumes.
+Outcome:  wrong
+Clue:  HALLOWEEN
+Chosen word:  CANDLE
+Reason:  Candles light jack-o'-lanterns, a classic Halloween decoration.
+Outcome:  correct
+Clue:  CANDLE
+Chosen word:  STAR
+Reason:  Both are sources of light in the night sky or a room, so a candle naturally brings to mind a star.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['HALLOWEEN', 'CANDLE', 'GHOST', 'VAMPIRE', 'WIZARD']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  HALLOWEEN
+Chosen word:  GHOST
+Reason:  Ghosts are a classic and widely recognized symbol of Halloween (costumes, decorations, haunted themes).
+Outcome:  wrong
+Clue:  HALLOWEEN
+Chosen word:  VAMPIRE
+Reason:  Vampires are iconic Halloween monsters and a common costume/theme associated with the holiday.
+Outcome:  wrong
+Clue:  HALLOWEEN
+Chosen word:  WIZARD
+Reason:  Wizards are a common Halloween costume and directly evoke the holiday's themes of magic and the supernatural.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['HALLOWEEN', 'CANDLE', 'GHOST', 'VAMPIRE', 'WIZARD']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Batch 4, Game 10/10
+Setter attempt 1 failed: The setter returned no text response.
+Setter attempt 2 failed: The setter returned no text response.
+Hidden chain: ROLLER -> SKATE -> ICE -> QUEEN -> BELL
+
+Playing as paired using claude-haiku-5-5
+Clue:  ROLLER
+Chosen word:  SKATE
+Reason:  A roller skate is a skate with wheels, so SKATE is the most direct compound association with ROLLER.
+Outcome:  correct
+Clue:  SKATE
+Chosen word:  ICE
+Reason:  Skating is most commonly done on ice, such as figure skating and ice hockey.
+Outcome:  correct
+Clue:  ICE
+Chosen word:  QUEEN
+Reason:  "Ice Queen" is a common phrase for a cold, aloof woman, and the Snow/Ice Queen is a familiar fairy-tale figure.
+Outcome:  correct
+Clue:  QUEEN
+Chosen word:  HONEY
+Reason:  A queen bee is the female ruler of a honeybee colony, and bees produce honey.
+Outcome:  wrong
+Clue:  QUEEN
+Chosen word:  PIZZA
+Reason:  Pizza Margherita is named after Queen Margherita of Savoy, the most widely known link between a queen and a board word.
+Outcome:  wrong
+Clue:  QUEEN
+Chosen word:  RING
+Reason:  A queen is traditionally associated with royal regalia such as rings, crowns, and jewelry.
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['ROLLER', 'SKATE', 'ICE', 'QUEEN', 'BELL']
+Lives remaining:  0
+paired result: out_of_lives
+
+Playing as held_out using gpt-5-mini
+Clue:  ROLLER
+Chosen word:  SKATE
+Reason:  Forms the common compound 'roller skate' (roller skating), a direct and widely used association.
+Outcome:  correct
+Clue:  SKATE
+Chosen word:  ICE
+Reason:  Most common association is ice skating / ice skates—'skate' commonly refers to skating on ice.
+Outcome:  correct
+Clue:  ICE
+Chosen word:  CAVE
+Reason:  Ice cave is a common natural formation; 'ice cave' is a direct, widely used collocation.
+Outcome:  wrong
+Clue:  ICE
+Chosen word:  RING
+Reason:  ‘Ice’ is common slang for diamonds, which are commonly set in rings (diamond ring).
+Outcome:  wrong
+Clue:  ICE
+Chosen word:  QUEEN
+Reason:  The phrase 'Ice Queen' is a common expression/archetype referring to a cold, aloof woman and directly pairs ICE with QUEEN.
+Outcome:  correct
+Clue:  QUEEN
+Chosen word:  HONEY
+Reason:  Common association: a queen (bee) is linked to bees and honey (hive/bee theme).
+Outcome:  out_of_lives
+Final result:  out_of_lives
+Hidden chain:  ['ROLLER', 'SKATE', 'ICE', 'QUEEN', 'BELL']
+Lives remaining:  0
+held_out result: out_of_lives
+
+Updating setter strategy notes...
+Strategy reflection failed: Reflection exceeded the 150-word limit.
+Keeping the previous strategy notes.
+Strategy notes unchanged. Keeping the current version.
+
+Batch 4, paired: 6/10 chains completed, 1 skipped or errored.
+
+Batch 4, held_out: 5/10 chains completed, 1 skipped or errored.

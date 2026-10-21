@@ -1,6 +1,7 @@
 import json
 import os
 import anthropic
+from openai import OpenAI
 from dotenv import load_dotenv
 from board_builder import (
     create_random_board,
@@ -11,10 +12,49 @@ from word_pool import word_pool
 
 load_dotenv()
 
-client = anthropic.Anthropic(api_key = os.environ.get("ANTHROPIC_API_KEY"))
+client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+openai_client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 MODEL = "claude-haiku-5-5"
 
-def create_hidden_chain_with_llm(board_words, strategy_notes = ""):
+def get_text_response_from_setter_model(setter_model, system_prompt, user_prompt,
+                                        max_output_tokens, use_thinking = False):
+    if setter_model.startswith("claude"):
+        if use_thinking:
+            response = client.messages.create(
+                model = setter_model,
+                max_tokens = 4000,
+                thinking = {"type": "adaptive"},
+                extra_body = {"output_config": {"effort": "medium"}},
+                system = system_prompt,
+                messages = [{"role": "user", "content": user_prompt}],
+            )
+        else:
+            response = client.messages.create(
+                model = setter_model,
+                max_tokens = max_output_tokens,
+                thinking = {"type": "disabled"},
+                system = system_prompt,
+                messages = [{"role": "user", "content": user_prompt}],
+            )
+
+        return "".join(
+            block.text for block in response.content if block.type == "text"
+        ).strip()
+
+    if setter_model.startswith("gpt"):
+        response = openai_client.responses.create(
+            model=setter_model,
+            input=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+        )
+        return response.output_text.strip()
+
+    raise ValueError(f"Unsupported setter model: {setter_model}")
+
+def create_hidden_chain_with_llm(board_words, strategy_notes = "",
+                                 setter_model = MODEL, use_thinking = False):
     board_words = [
         word.strip().upper() for word in board_words
     ]
@@ -65,28 +105,12 @@ def create_hidden_chain_with_llm(board_words, strategy_notes = ""):
         current_prompt = user_prompt + retry_feedback
 
         try:
-            response = client.messages.create(
-                model=MODEL,
-                max_tokens=1600,
-                thinking={"type": "disabled"},
-                system=system_prompt,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": current_prompt
-                    }
-                ]
-            )
-
-            text_blocks = [
-                block for block in response.content
-                if block.type == "text"
-            ]
-
-            response_text = (
-                text_blocks[0].text.strip()
-                if text_blocks
-                else ""
+            response_text = get_text_response_from_setter_model(
+                setter_model,
+                system_prompt,
+                current_prompt,
+                max_output_tokens = 1600,
+                use_thinking = use_thinking
             )
 
             if not response_text:
@@ -238,7 +262,8 @@ def create_hidden_chain_with_llm(board_words, strategy_notes = ""):
 
     return None, last_failure_reason
 
-def update_setter_strategy_notes(current_strategy_notes, paired_game_summaries):
+def update_setter_strategy_notes(current_strategy_notes, paired_game_summaries,
+                                 setter_model = MODEL):
     system_prompt = """
     You improve the strategy notes of a setter in a word-association game.
     The setter builds chains on a new random board every game, so the notes
@@ -285,24 +310,12 @@ def update_setter_strategy_notes(current_strategy_notes, paired_game_summaries):
     """
 
     try:
-        response = client.messages.create(
-            model = MODEL,
-            max_tokens = 700,
-            thinking = {"type": "disabled"},
-            system = system_prompt,
-            messages = [
-                {
-                    "role": "user",
-                    "content": user_prompt,
-                }
-            ]
+        response_text = get_text_response_from_setter_model(
+            setter_model,
+            system_prompt,
+            user_prompt,
+            max_output_tokens = 700
         )
-
-        response_text = "".join(
-            block.text
-            for block in response.content
-            if block.type == "text"
-        ).strip()
 
         # Remove Markdown code fences if the model includes them.
         if response_text.startswith("```"):
@@ -343,7 +356,6 @@ def update_setter_strategy_notes(current_strategy_notes, paired_game_summaries):
         print(f"Strategy reflection failed: {error}")
         print("Keeping the previous strategy notes.")
         return current_strategy_notes
-
 
 if __name__ == "__main__":
     for batch_id in range(1, 6):

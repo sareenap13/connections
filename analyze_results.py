@@ -302,7 +302,7 @@ def analyze_results(results):
     for batch in sorted(batch_stats, key=str):
         print(f"\nBatch {batch}:")
 
-        for role, stats in sorted(batch_stats[batch].items()):
+        for role, stats in sorted(batch_stats[batch].items(), key=lambda item: str(item[0])):
             played = stats["played"]
             completed = stats["completed"]
             rate = completed / played * 100 if played else 0

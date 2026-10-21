@@ -7,11 +7,13 @@ from guesser_agent import MODEL as GUESSER_MODEL
 from word_pool import word_pool
 from setter_agent import update_setter_strategy_notes
 
-PAIRED_GUESSER_MODEL = GUESSER_MODEL
+SETTER_MODEL = "claude-haiku-5-5"
+PAIRED_GUESSER_MODEL = SETTER_MODEL
 HELD_OUT_GUESSER_MODEL = "gpt-5-mini"
+SETTER_THINKING_ENABLED = True
 
 # experiment settings
-NUMBER_OF_BATCHES = 10
+NUMBER_OF_BATCHES = 4
 GAMES_PER_BATCH = 10
 LOG_FILE = "game_logs.jsonl"
 
@@ -101,6 +103,7 @@ def append_strategy_history(batch_number, version, strategy_notes):
     record = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "batch_number": batch_number,
+        "setter_model": SETTER_MODEL,
         "strategy_notes_version": version,
         "strategy_notes": strategy_notes,
     }
@@ -118,6 +121,8 @@ def create_base_record(run_id, batch_number, game_number, board, strategy_notes,
     return {
         "run_id": run_id,
         "timestamp": datetime.now(timezone.utc).isoformat(),
+        "setter_model": SETTER_MODEL,
+        "setter_thinking": SETTER_THINKING_ENABLED,
         "batch_number": batch_number,
         "game_number": game_number,
         "guesser_model": guesser_model,
@@ -162,6 +167,8 @@ def run_self_play_batches():
             hidden_chain, reasons = create_hidden_chain_with_llm(
                 board,
                 strategy_notes = strategy_notes,
+                setter_model = SETTER_MODEL,
+                use_thinking = SETTER_THINKING_ENABLED
             )
 
             # log failed chain generation and move to the next game
@@ -233,6 +240,8 @@ def run_self_play_batches():
                     record.update({
                         "batch_number": batch_number,
                         "game_number": game_number,
+                        "setter_model": SETTER_MODEL,
+                        "setter_thinking": SETTER_THINKING_ENABLED,
                         "guesser_model": guesser_model,
                         "guesser_role": guesser_role,
                         "board_words": board,
@@ -280,6 +289,7 @@ def run_self_play_batches():
             updated_notes = update_setter_strategy_notes(
                 strategy_notes,
                 paired_summaries,
+                setter_model = SETTER_MODEL
             )
 
             if updated_notes != strategy_notes:

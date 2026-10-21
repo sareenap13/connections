@@ -1,0 +1,153 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Did My Agents Get Better?</title><style>
+:root{--bg:#0f1115;--panel:#181b22;--ink:#f2f3f5;--muted:#9aa3b2;--line:#2a2f3a;
+--haiku:#d97757;--gpt:#6aa9ff;--warn:#e8b04b;--ok:#4cc38a;--no:#ef6a6a}
+*{box-sizing:border-box}html{scroll-snap-type:y mandatory;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:22px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+section{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;border-bottom:1px solid var(--line)}
+.inner{width:100%;max-width:1200px;margin:0 auto;padding:56px 48px}
+.kicker{color:var(--muted);font-size:18px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+h2{font-size:56px;line-height:1.1;margin:0 0 28px}h3{font-size:22px;margin:22px 0 10px;color:var(--muted);font-weight:600}
+h3 small{font-weight:400;display:block;font-size:18px}.sub{color:var(--muted);font-size:20px}
+.takeaway{font-size:34px;font-weight:700;margin-top:32px;border-left:6px solid var(--warn);padding-left:20px}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:900px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 10px;text-align:center;font-weight:700;font-size:24px;letter-spacing:.04em}
+.clue{font-size:30px;margin:26px 0}.clue span{color:var(--warn);font-weight:800}
+.reveal-button{font:inherit;font-size:20px;background:var(--panel);color:var(--ink);border:1px solid var(--muted);border-radius:8px;padding:10px 18px;cursor:pointer}
+.hidden{display:none}.guess-grid{display:flex;gap:64px;margin-top:20px}.guess-col h3{margin-top:0}
+.move{font-size:30px;margin:6px 0}.ok{color:var(--ok)}.no{color:var(--no)}
+.chain{font-size:30px;font-weight:700;margin-top:22px;letter-spacing:.02em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;font-size:19px;line-height:1.5;overflow:auto;margin:0}
+code{font-family:"SF Mono",Menlo,Consolas,monospace}
+.loop{display:flex;align-items:center;gap:28px;margin-bottom:28px}.branches{display:flex;flex-direction:column;gap:18px}
+.branch{display:flex;align-items:center;gap:14px}.arrow{color:var(--muted);font-size:30px}
+.node{background:var(--panel);border:2px solid var(--line);border-radius:10px;padding:14px 18px;font-weight:600}
+.node small{color:var(--muted);font-weight:400}.paired{border-color:var(--haiku)}.heldout{border-color:var(--gpt)}.blind{color:var(--muted);border-style:dashed}
+.bar-row{display:grid;grid-template-columns:340px 1fr 80px;align-items:center;gap:14px;margin:8px 0}
+.bar-label{color:var(--muted);font-size:20px}.bar-track{background:var(--panel);border-radius:6px;height:26px;overflow:hidden}
+.bar{display:block;height:100%;border-radius:6px}.bar-value{font-weight:700;text-align:right}
+.c-haiku{background:var(--haiku)}.c-gpt{background:var(--gpt)}.c-warn{background:var(--warn)}
+.batch-row{display:grid;grid-template-columns:110px 1fr;align-items:center;gap:10px}
+.batch-row .bar-row{grid-template-columns:150px 1fr 70px;margin:2px 0}.batch-row .bar-track{height:14px}.batch-row .bar-label{font-size:16px}
+.batch-label{color:var(--muted);font-size:18px}.batches{margin:10px 0 18px}
+blockquote{font-size:32px;line-height:1.35;margin:0 0 26px;padding-left:22px;border-left:4px solid var(--haiku)}
+cite{display:block;font-style:normal;color:var(--muted);font-size:20px;margin-top:8px}
+details{margin:0 0 20px}summary{cursor:pointer;color:var(--muted);font-size:20px;margin-bottom:10px}
+.minis{display:flex;gap:18px;align-items:flex-end;height:150px;margin-top:10px}
+.mini{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;width:44px;font-weight:700}
+.mini-bar{width:100%;background:var(--warn);border-radius:4px 4px 0 0;margin-bottom:6px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.two-col .bar-row{grid-template-columns:300px 1fr 70px}
+.groups{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.group .bar-row{grid-template-columns:130px 1fr 60px}
+.edge{font-size:24px;font-weight:700;color:var(--warn)}.example{margin-top:22px;font-size:24px}
+.lessons{font-size:36px;line-height:1.4;padding-left:40px}.lessons li{margin:14px 0}.repo{font-size:24px;color:var(--warn)}
+.moves .move{font-size:26px}
+.play-tile{font:inherit;font-weight:700;font-size:24px;color:var(--ink);cursor:pointer;transition:transform .08s,background .2s}
+.play-tile:hover:not(:disabled){border-color:var(--warn);transform:translateY(-2px)}
+.play-tile:disabled{cursor:default}
+.play-tile.found{background:#173a2a;border-color:var(--ok);color:var(--ok)}
+.play-tile.missed{background:#3a1a1c;border-color:var(--no);color:var(--no);opacity:.7}
+.play-tile.answer{border-color:var(--warn);color:var(--warn)}
+.play-status{display:flex;gap:56px;align-items:baseline}.play-status .clue{margin:0 0 18px}
+.lives{font-size:26px;color:var(--muted)}.lives span{color:var(--no);letter-spacing:.15em}
+.play-message{font-size:28px;font-weight:600;min-height:40px;margin:22px 0}
+#agents-played .guess-grid{margin-top:4px;flex-direction:column;gap:10px}#agents-played .guess-col{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px}#agents-played .guess-col h3{margin:0;min-width:200px}#agents-played .move{font-size:22px;margin:0}#agents-played .chain{font-size:24px;margin-top:12px}
+
+.legend{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:18px;margin:6px 0 14px}
+.key{display:inline-block;width:18px;height:18px;border-radius:4px;margin-left:14px}.legend .key:first-child{margin-left:0}
+.column-chart{display:flex;align-items:flex-end;gap:22px;height:300px;border-bottom:1px solid var(--line);padding-left:6px}
+.axis{display:flex;flex-direction:column;justify-content:space-between;height:100%;color:var(--muted);font-size:16px;margin-right:8px}
+.col-group{display:flex;flex-direction:column;align-items:center;height:100%;flex:1}
+.cols{display:flex;align-items:flex-end;gap:4px;height:100%;width:100%;justify-content:center}
+.col{display:block;width:40%;border-radius:4px 4px 0 0}
+.col-label{color:var(--muted);font-size:18px;margin-top:6px;position:relative;top:30px}
+.col-caption{color:var(--muted);font-size:16px;text-align:center;margin-top:34px}
+blockquote{font-size:28px}
+.group .bar-row{grid-template-columns:70px 1fr 60px}
+section{padding:10px 0}
+.title-name{font-size:30px;font-weight:800;letter-spacing:.28em;color:var(--warn);margin-bottom:22px}
+.title-question{font-size:72px;line-height:1.08;margin:0 0 36px;max-width:1050px}
+.title-byline{font-size:22px;color:var(--muted)}
+#takeaways .kicker{font-size:22px;color:var(--warn);letter-spacing:.06em;text-transform:none;margin-bottom:18px}
+.answer{font-size:46px;line-height:1.18;font-weight:800;margin:0 0 36px}.answer span{color:var(--ok)}
+.evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:30px}
+.evidence{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px;display:flex;flex-direction:column}
+.evidence-label{color:var(--muted);font-size:19px}.evidence-value{font-size:36px;font-weight:800;margin:4px 0}.evidence-unit{color:var(--muted);font-size:17px}
+.lessons-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;font-size:23px;font-weight:600}
+.lessons-row b{display:block;color:var(--warn);font-size:20px;margin-bottom:4px}
+.closing{display:flex;justify-content:space-between;align-items:baseline;margin-top:34px;gap:20px}
+#fullscreen-button{position:fixed;top:18px;right:22px;z-index:10;font:inherit;font-size:16px;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer;opacity:.75}
+#fullscreen-button:hover{opacity:1;color:var(--ink)}
+:fullscreen #fullscreen-button{display:none}
+@media (max-width:900px){.two-col,.groups{grid-template-columns:1fr}.bar-row{grid-template-columns:160px 1fr 60px}h2{font-size:40px}}
+</style></head><body><button id="fullscreen-button" title="Full screen (F)">⛶ Full screen</button><section id="title" class="title-section"><div class="inner"><div class="title-name">CONNECTION</div><h1 class="title-question">Can an AI agent learn to make better decisions?</h1><p class="title-byline">Sareena Parikh · AI Tinkerers NYC · Agentic Loops Demo Day</p></div></section><section id="backup"><div class="inner"><div class="kicker">CONNECTION · you are the guesser</div><h2>Your turn</h2><div id="play-game" data-chain="[&quot;TEQUILA&quot;, &quot;SALT&quot;, &quot;LEMON&quot;, &quot;ORANGE&quot;, &quot;PEACH&quot;]"><div class="play-status"><p class="clue">Clue <span id="play-clue">TEQUILA</span></p><p class="lives">Lives <span id="play-lives">♥ ♥ ♥</span></p></div><div class="board"><button class="tile play-tile" data-word="ORANGE">ORANGE</button><button class="tile play-tile" data-word="EYE">EYE</button><button class="tile play-tile" data-word="SUSHI">SUSHI</button><button class="tile play-tile" data-word="COURT">COURT</button><button class="tile play-tile" data-word="BEE">BEE</button><button class="tile play-tile" data-word="DRUM">DRUM</button><button class="tile play-tile" data-word="SKATE">SKATE</button><button class="tile play-tile" data-word="ALASKA">ALASKA</button><button class="tile play-tile" data-word="BASKETBALL">BASKETBALL</button><button class="tile play-tile" data-word="PEACH">PEACH</button><button class="tile play-tile" data-word="ROCKET">ROCKET</button><button class="tile play-tile" data-word="KEY">KEY</button><button class="tile play-tile" data-word="HEART">HEART</button><button class="tile play-tile" data-word="CAMERA">CAMERA</button><button class="tile play-tile" data-word="SALT">SALT</button><button class="tile play-tile" data-word="LEMON">LEMON</button></div><p id="play-message" class="play-message">Find the next word. Each correct word becomes the new clue.</p><button class="reveal-button" data-target="agents-played">Show how the agents played this chain</button><div id="agents-played" class="hidden"><div class="guess-grid"><div class="guess-col"><h3>Haiku <small>found 4 of 4</small></h3><div class="move">TEQUILA → <b>SALT</b> <span class="ok">✓</span></div><div class="move">SALT → <b>LEMON</b> <span class="ok">✓</span></div><div class="move">LEMON → <b>ORANGE</b> <span class="ok">✓</span></div><div class="move">ORANGE → <b>PEACH</b> <span class="ok">✓</span></div></div><div class="guess-col"><h3>GPT-5-mini <small>found 4 of 4</small></h3><div class="move">TEQUILA → <b>SALT</b> <span class="ok">✓</span></div><div class="move">SALT → <b>LEMON</b> <span class="ok">✓</span></div><div class="move">LEMON → <b>ORANGE</b> <span class="ok">✓</span></div><div class="move">ORANGE → <b>BASKETBALL</b> <span class="no">✗</span></div><div class="move">ORANGE → <b>PEACH</b> <span class="ok">✓</span></div></div></div><p class="chain">TEQUILA → SALT → LEMON → ORANGE → PEACH</p></div></div></div></section><section id="hook"><div class="inner"><div class="kicker">CONNECTION · harder one</div><h2>Now try this</h2><div class="board"><div class="tile">HORSE</div><div class="tile">EVEREST</div><div class="tile">NINJA</div><div class="tile">RING</div><div class="tile">BASKETBALL</div><div class="tile">WIZARD</div><div class="tile">BAT</div><div class="tile">ROME</div><div class="tile">PARIS</div><div class="tile">SUN</div><div class="tile">CLOWN</div><div class="tile">JAZZ</div><div class="tile">KNIGHT</div><div class="tile">QUEEN</div><div class="tile">DRAGON</div><div class="tile">CHESS</div></div><p class="clue">Clue <span>KNIGHT</span>. Which word comes next?</p><button class="reveal-button" data-target="knight-reveal">Reveal what the agents guessed</button><div id="knight-reveal" class="hidden"><div class="guess-grid"><div class="guess-col"><h3>Haiku</h3><div class="move">KNIGHT → <b>CHESS</b> <span class="no">✗</span></div><div class="move">KNIGHT → <b>HORSE</b> <span class="no">✗</span></div><div class="move">KNIGHT → <b>QUEEN</b> <span class="ok">✓</span></div></div><div class="guess-col"><h3>GPT-5-mini</h3><div class="move">KNIGHT → <b>CHESS</b> <span class="no">✗</span></div><div class="move">KNIGHT → <b>HORSE</b> <span class="no">✗</span></div></div></div><p class="chain">FANTASY → WIZARD → DRAGON → KNIGHT → QUEEN</p></div></div></section><section id="loop"><div class="inner"><div class="kicker">What I built</div><h2>A loop with a held-out guesser</h2><div class="loop"><div class="node setter">Setter builds a chain<br><small>random 16-word board</small></div><div class="branches"><div class="branch"><div class="node paired">Same-model guesser</div><div class="arrow">→</div><div class="node notes">Setter rewrites its strategy notes</div></div><div class="branch"><div class="node heldout">Other-model guesser</div><div class="arrow">→</div><div class="node blind">Logged, but kept out of reflection</div></div></div></div><pre><code># run_self_play_batches.py
+if guesser_role == &quot;paired&quot;:
+    paired_feedback_games.append(record)
+
+# summarize_paired_games()
+if game.get(&quot;guesser_role&quot;) != &quot;paired&quot;:
+    continue   # the held-out guesser never reaches reflection</code></pre><p class="takeaway">The loop learns from one guesser. The other one tests what it produces.</p></div></section><section id="run-one"><div class="inner"><div class="kicker">Run 1 · 99 chains, 10 rounds of reflection</div><h2>The notes kept changing</h2><p class="sub">Average links found per game (out of 4), batch by batch. Haiku setter, thinking off.</p><div class="legend"><span class="key c-haiku"></span>same-model guesser<span class="key c-gpt"></span>other-model guesser</div><div class="column-chart"><div class="axis"><span>4</span><span>2</span><span>0</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:62%" title="2.50"></span><span class="col c-gpt" style="height:50%" title="2.00"></span></div><span class="col-label">1</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:44%" title="1.78"></span><span class="col c-gpt" style="height:42%" title="1.67"></span></div><span class="col-label">2</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:30%" title="1.20"></span><span class="col c-gpt" style="height:25%" title="1.00"></span></div><span class="col-label">3</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:50%" title="2.00"></span><span class="col c-gpt" style="height:40%" title="1.60"></span></div><span class="col-label">4</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:48%" title="1.90"></span><span class="col c-gpt" style="height:32%" title="1.30"></span></div><span class="col-label">5</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:62%" title="2.50"></span><span class="col c-gpt" style="height:48%" title="1.90"></span></div><span class="col-label">6</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:68%" title="2.70"></span><span class="col c-gpt" style="height:52%" title="2.10"></span></div><span class="col-label">7</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:57%" title="2.30"></span><span class="col c-gpt" style="height:60%" title="2.40"></span></div><span class="col-label">8</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:45%" title="1.80"></span><span class="col c-gpt" style="height:35%" title="1.40"></span></div><span class="col-label">9</span></div><div class="col-group"><div class="cols"><span class="col c-haiku" style="height:48%" title="1.90"></span><span class="col c-gpt" style="height:48%" title="1.90"></span></div><span class="col-label">10</span></div></div><div class="col-caption">batch</div><p class="sub">Strategy notes v1 had 96 words. v10 had 118, with more specific rules each round.</p><p class="takeaway">The scores didn&#x27;t.</p></div></section><section id="quotes"><div class="inner"><div class="kicker">Run 1</div><h2>In its own words</h2><blockquote>“Strategy notes say EVEREST-&gt;HORSE was a missed loose link, so this chain avoids it.”<cite>Shipped chain: MOUNTAIN → EVEREST → HORSE → CIRCUS → CANDLE</cite></blockquote><blockquote>“Cookie and robot: a cookie-cutter robot... weak link, so revised below.”<cite>Shipped chain: BEAR → COOKIE → ROBOT → GHOST → WHEEL</cite></blockquote><details><summary>Raw log record</summary><pre><code>{
+  &quot;batch_number&quot;: 9,
+  &quot;hidden_chain&quot;: [
+    &quot;MOUNTAIN&quot;,
+    &quot;EVEREST&quot;,
+    &quot;HORSE&quot;,
+    &quot;CIRCUS&quot;,
+    &quot;CANDLE&quot;
+  ],
+  &quot;setter_reasons&quot;: [
+    &quot;Everest is a mountain, so the clue MOUNTAIN points directly to it.&quot;,
+    &quot;Strategy notes say EVEREST-&gt;HORSE was a missed loose link, so this chain avoids it.&quot;,
+    &quot;Placeholder reason.&quot;,
+    &quot;Placeholder reason.&quot;
+  ]
+}</code></pre></details><p class="sub">Chains per batch of 10 where the setter called its own link weak</p><div class="minis"><div class="mini"><span class="mini-bar" style="height:10%"></span><span>1</span></div><div class="mini"><span class="mini-bar" style="height:10%"></span><span>1</span></div><div class="mini"><span class="mini-bar" style="height:50%"></span><span>5</span></div><div class="mini"><span class="mini-bar" style="height:30%"></span><span>3</span></div><div class="mini"><span class="mini-bar" style="height:20%"></span><span>2</span></div><div class="mini"><span class="mini-bar" style="height:30%"></span><span>3</span></div><div class="mini"><span class="mini-bar" style="height:20%"></span><span>2</span></div><div class="mini"><span class="mini-bar" style="height:40%"></span><span>4</span></div><div class="mini"><span class="mini-bar" style="height:70%"></span><span>7</span></div><div class="mini"><span class="mini-bar" style="height:50%"></span><span>5</span></div></div><p class="takeaway">It could see the weakness. It shipped the chain anyway.</p></div></section><section id="flag"><div class="inner"><div class="kicker">Control runs</div><h2>One config flag</h2><div class="two-col"><pre><code># setter_agent.py  (the whole change)
+
+# run 1
+thinking={&quot;type&quot;: &quot;disabled&quot;}
+
+# run 3
+thinking={&quot;type&quot;: &quot;adaptive&quot;},
+extra_body={&quot;output_config&quot;:
+            {&quot;effort&quot;: &quot;medium&quot;}}</code></pre><div><h3>Links found per game</h3><div class="bar-row"><span class="bar-label">Haiku setter, thinking off (99)</span><span class="bar-track"><span class="bar c-haiku" style="width:47.3%"></span></span><span class="bar-value">1.89</span></div><div class="bar-row"><span class="bar-label">Haiku setter, thinking on (37)</span><span class="bar-track"><span class="bar c-haiku" style="width:71.3%"></span></span><span class="bar-value">2.85</span></div><div class="bar-row"><span class="bar-label">GPT-5-mini setter (60)</span><span class="bar-track"><span class="bar c-gpt" style="width:78.1%"></span></span><span class="bar-value">3.12</span></div><h3>Chains where the setter called its own link weak</h3><div class="bar-row"><span class="bar-label">Haiku setter, thinking off</span><span class="bar-track"><span class="bar c-warn" style="width:33.3%"></span></span><span class="bar-value">33%</span></div><div class="bar-row"><span class="bar-label">Haiku setter, thinking on</span><span class="bar-track"><span class="bar c-warn" style="width:0.0%"></span></span><span class="bar-value">0%</span></div><div class="bar-row"><span class="bar-label">GPT-5-mini setter</span><span class="bar-track"><span class="bar c-warn" style="width:0.0%"></span></span><span class="bar-value">0%</span></div></div></div><p class="takeaway">One setting did more than ten rounds of reflection. Separate runs, so a strong hint, not proof.</p></div></section><section id="same-model"><div class="inner"><div class="kicker">Who reads whose chains · links found by each guesser</div><h2>Haiku reads Haiku better</h2><div class="groups"><div class="group"><h3>Haiku setter, thinking off <small>99 chains</small></h3><div class="bar-row"><span class="bar-label">Haiku</span><span class="bar-track"><span class="bar c-haiku" style="width:51.5%"></span></span><span class="bar-value">2.06</span></div><div class="bar-row"><span class="bar-label">GPT</span><span class="bar-track"><span class="bar c-gpt" style="width:43.2%"></span></span><span class="bar-value">1.73</span></div><p class="edge">Haiku edge +0.33</p></div><div class="group"><h3>Haiku setter, thinking on <small>37 chains</small></h3><div class="bar-row"><span class="bar-label">Haiku</span><span class="bar-track"><span class="bar c-haiku" style="width:77.7%"></span></span><span class="bar-value">3.11</span></div><div class="bar-row"><span class="bar-label">GPT</span><span class="bar-track"><span class="bar c-gpt" style="width:64.9%"></span></span><span class="bar-value">2.59</span></div><p class="edge">Haiku edge +0.51</p></div><div class="group"><h3>GPT-5-mini setter <small>60 chains</small></h3><div class="bar-row"><span class="bar-label">Haiku</span><span class="bar-track"><span class="bar c-haiku" style="width:77.9%"></span></span><span class="bar-value">3.12</span></div><div class="bar-row"><span class="bar-label">GPT</span><span class="bar-track"><span class="bar c-gpt" style="width:78.3%"></span></span><span class="bar-value">3.13</span></div><p class="edge">Haiku edge -0.02</p></div></div><div class="example"><p class="chain">PRINCESS → PEACH → CASTLE → STAR → MOON</p><div>Haiku found <b>2</b> of 4</div><div>GPT-5-mini found <b>1</b> of 4</div></div><p class="takeaway">The same model is the easiest audience. Test with a different one.</p></div></section><section id="takeaways"><div class="inner"><div class="kicker">So, can an AI agent learn to make better decisions?</div><p class="answer">Not from its own notes.<br><span>It got better when it had room to think.</span><br>And its own model followed it better than another model did.</p><div class="evidence-grid"><div class="evidence"><span class="evidence-label">Reflecting on its own notes</span><span class="evidence-value">10 rounds</span><span class="evidence-unit">flat</span></div><div class="evidence"><span class="evidence-label">Room to think</span><span class="evidence-value">1.89 → 2.85</span><span class="evidence-unit">links found</span></div><div class="evidence"><span class="evidence-label">Same model as guesser</span><span class="evidence-value">+0.33 / +0.51</span><span class="evidence-unit">same-model edge</span></div></div><div class="lessons-row"><div><b>1</b>Check the cheap settings first</div><div><b>2</b>Test with a different model</div><div><b>3</b>Run the control that could prove you wrong</div></div><p class="closing"><span class="repo">github.com/sareenap13/connections</span><span class="sub">One run per condition. 99, 60 and 37 matched chains.</span></p></div></section><script>
+const sections=[...document.querySelectorAll('section')];
+function currentIndex(){let best=0,dist=1e9;sections.forEach((s,i)=>{const d=Math.abs(s.getBoundingClientRect().top);if(d<dist){dist=d;best=i}});return best}
+function go(i){const s=sections[Math.max(0,Math.min(sections.length-1,i))];s.scrollIntoView()}
+function revealIn(section){const b=section.querySelector('.reveal-button');if(b){b.click()}}
+document.querySelectorAll('.reveal-button').forEach(b=>b.addEventListener('click',()=>{
+  document.getElementById(b.dataset.target).classList.remove('hidden');b.style.display='none'}));
+document.addEventListener('keydown',e=>{
+  if(e.key===' '||e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();go(currentIndex()+1)}
+  else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();go(currentIndex()-1)}
+  else if(e.key==='r'||e.key==='R'){revealIn(sections[currentIndex()])}
+  else if(e.key==='f'||e.key==='F'){toggleFullscreen()}});
+function toggleFullscreen(){
+  if(document.fullscreenElement){document.exitFullscreen()}else{document.documentElement.requestFullscreen()}}
+document.getElementById('fullscreen-button').addEventListener('click',toggleFullscreen);
+
+const playGame=document.getElementById('play-game');
+if(playGame){
+  const hiddenChain=JSON.parse(playGame.dataset.chain);
+  let chainPosition=0, livesRemaining=3, gameIsOver=false;
+  const clueLabel=document.getElementById('play-clue');
+  const livesLabel=document.getElementById('play-lives');
+  const message=document.getElementById('play-message');
+  const tiles=[...playGame.querySelectorAll('.play-tile')];
+  function showLives(){livesLabel.textContent=livesRemaining>0?Array(livesRemaining).fill('♥').join(' '):'none left'}
+  function endGame(text){
+    gameIsOver=true;message.textContent=text;
+    tiles.forEach(t=>{t.disabled=true;if(hiddenChain.slice(chainPosition+1).includes(t.dataset.word)){t.classList.add('answer')}})}
+  tiles.forEach(tile=>tile.addEventListener('click',()=>{
+    if(gameIsOver||tile.disabled)return;
+    const guessedWord=tile.dataset.word, intendedWord=hiddenChain[chainPosition+1];
+    tile.disabled=true;
+    if(guessedWord===intendedWord){
+      tile.classList.add('found');chainPosition+=1;
+      if(chainPosition===hiddenChain.length-1){endGame('You found the chain. Now see how two models solved it.');return}
+      clueLabel.textContent=guessedWord;message.textContent='Correct. '+guessedWord+' is your new clue.';
+    }else{
+      tile.classList.add('missed');livesRemaining-=1;showLives();
+      if(livesRemaining===0){endGame('Out of lives. You found '+chainPosition+' of 4 links. Answers in gold.');return}
+      message.textContent='Not that one. Try again.';
+    }}));
+}
+</script></body></html>

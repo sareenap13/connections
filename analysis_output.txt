@@ -1,0 +1,674 @@
+
+========== EXPERIMENT RUNS ==========
+20261020T135753543912Z
+20261020T140928953726Z
+20261020T141506425734Z
+20261020T142355324581Z
+20261020T144118938197Z
+20261020T153250353776Z
+20261020T155229036857Z
+
+Analyzing run: 20261020T155229036857Z
+
+========== OVERALL RESULTS ==========
+Total log records: 199
+Games played: 198
+Games with agent response failures: 1
+Failed response turns: 2
+Valid performance attempts: 198
+Chains completed: 29
+Setter skips: 1
+Game errors: 0
+Completion rate: 14.6%
+Total correct guesses: 375
+Total wrong guesses: 538
+Total invalid moves: 0
+Average correct guesses per game: 1.89
+Average wrong guesses per game: 2.72
+
+========== RESULTS BY GUESSER ROLE ==========
+
+PAIRED:
+  Model: claude-haiku-5-5
+  Games played: 99
+  Chains completed: 19
+  Completion rate: 19.2%
+  Average correct guesses: 2.06
+  Average wrong guesses: 2.65
+
+HELD_OUT:
+  Model: gpt-5-mini
+  Games played: 99
+  Chains completed: 10
+  Completion rate: 10.1%
+  Average correct guesses: 1.73
+  Average wrong guesses: 2.79
+
+========== RESULTS BY BATCH AND ROLE ==========
+
+Batch 1:
+  held_out: 2/10 completed (20.0%), skipped=0, errors=0, agent_failures=0, correct=20, wrong=25
+  Average links found: 2.00/4
+  paired: 3/10 completed (30.0%), skipped=0, errors=0, agent_failures=0, correct=25, wrong=23
+  Average links found: 2.50/4
+
+Batch 10:
+  held_out: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=19, wrong=29
+  Average links found: 1.90/4
+  paired: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=19, wrong=28
+  Average links found: 1.90/4
+
+Batch 2:
+  None: 0/0 completed (0.0%), skipped=1, errors=0, agent_failures=0, correct=0, wrong=0
+  Average links found: 0.00/4
+  held_out: 0/9 completed (0.0%), skipped=0, errors=0, agent_failures=0, correct=15, wrong=27
+  Average links found: 1.67/4
+  paired: 1/9 completed (11.1%), skipped=0, errors=0, agent_failures=0, correct=16, wrong=26
+  Average links found: 1.78/4
+
+Batch 3:
+  held_out: 0/10 completed (0.0%), skipped=0, errors=0, agent_failures=0, correct=10, wrong=30
+  Average links found: 1.00/4
+  paired: 0/10 completed (0.0%), skipped=0, errors=0, agent_failures=0, correct=12, wrong=30
+  Average links found: 1.20/4
+
+Batch 4:
+  held_out: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=16, wrong=27
+  Average links found: 1.60/4
+  paired: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=20, wrong=27
+  Average links found: 2.00/4
+
+Batch 5:
+  held_out: 0/10 completed (0.0%), skipped=0, errors=0, agent_failures=0, correct=13, wrong=30
+  Average links found: 1.30/4
+  paired: 3/10 completed (30.0%), skipped=0, errors=0, agent_failures=0, correct=19, wrong=25
+  Average links found: 1.90/4
+
+Batch 6:
+  held_out: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=19, wrong=27
+  Average links found: 1.90/4
+  paired: 4/10 completed (40.0%), skipped=0, errors=0, agent_failures=0, correct=25, wrong=23
+  Average links found: 2.50/4
+
+Batch 7:
+  held_out: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=21, wrong=27
+  Average links found: 2.10/4
+  paired: 2/10 completed (20.0%), skipped=0, errors=0, agent_failures=0, correct=27, wrong=26
+  Average links found: 2.70/4
+
+Batch 8:
+  held_out: 3/10 completed (30.0%), skipped=0, errors=0, agent_failures=0, correct=24, wrong=25
+  Average links found: 2.40/4
+  paired: 3/10 completed (30.0%), skipped=0, errors=0, agent_failures=0, correct=23, wrong=25
+  Average links found: 2.30/4
+
+Batch 9:
+  held_out: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=14, wrong=29
+  Average links found: 1.40/4
+  paired: 1/10 completed (10.0%), skipped=0, errors=0, agent_failures=0, correct=18, wrong=29
+  Average links found: 1.80/4
+
+========== SAME-CHAIN COMPARISON ==========
+  BOOK -> PITCH -> JAZZ -> MUMMY -> AMAZON: neither completed
+  TREASURE -> MAP -> ISLAND -> OCEAN -> SHARK: both completed
+  NIGHT -> OWL -> FOREST -> LION -> HONEY: neither completed
+  TENNIS -> RACKET -> COURT -> SKATE -> BOOK: neither completed
+  SHADOW -> MIRROR -> EYE -> SPIDER -> BOTTLE: neither completed
+  STRIPES -> TIGER -> SHARK -> WHALE -> DRAGON: neither completed
+  NIGHT -> OWL -> FOREST -> STORM -> CASTLE: neither completed
+  PIRATE -> MAP -> TREASURE -> CAVE -> DRAGON: neither completed
+  SHIP -> PIRATE -> MAP -> CAVE -> VOLCANO: paired completed; held-out did not
+  BOARD -> CHESS -> KNIGHT -> CASTLE -> KEY: both completed
+  SAILOR -> PIRATE -> TIGER -> CIRCUS -> LION: neither completed
+  BOAT -> RIVER -> SNOW -> CANDLE -> CAKE: neither completed
+  KING -> CASTLE -> KNIGHT -> CHESS -> TEAM: neither completed
+  SANDWICH -> BREAD -> COOKIE -> APPLE -> EYE: paired completed; held-out did not
+  HONEY -> BEE -> STAR -> ROCKET -> TRAIN: neither completed
+  ROMANCE -> CANDLE -> CASTLE -> KNIGHT -> MEDAL: neither completed
+  SPORT -> MEDAL -> TIGER -> LION -> CAKE: neither completed
+  ICE -> SNOW -> RAIN -> ROSE -> BRIDGE: neither completed
+  BREAD -> SALT -> PEPPER -> COOKIE -> CAKE: neither completed
+  ICE -> SKATE -> BOXING -> RACKET -> EGYPT: neither completed
+  ROMANCE -> HEART -> SALT -> BRAZIL -> PARIS: neither completed
+  SWEET -> COOKIE -> CHOCOLATE -> CANDLE -> BELL: neither completed
+  ARCTIC -> BEAR -> CHEESE -> COOKIE -> CHOCOLATE: neither completed
+  SUNSHINE -> RAIN -> CORN -> WHEEL -> BRIDGE: neither completed
+  SHERLOCK -> HOLLYWOOD -> TRAIN -> CLOCK -> BOOK: neither completed
+  ITALY -> PIZZA -> ORANGE -> JAZZ -> PIANO: neither completed
+  SHARK -> WHALE -> OWL -> BEAR -> SPY: neither completed
+  CHESS -> KNIGHT -> PITCH -> GOAL -> MEDAL: neither completed
+  SAND -> DESERT -> VOLCANO -> MARS -> TRACK: neither completed
+  SEA -> OCEAN -> ISLAND -> SHARK -> FOX: neither completed
+  INSECT -> BEE -> NET -> BOXING -> SPAIN: neither completed
+  KNIGHT -> HORSE -> EAGLE -> MIRROR -> GHOST: neither completed
+  NIGHT -> OWL -> EYE -> GLASS -> PYRAMID: neither completed
+  MEDIEVAL -> CROWN -> ISLAND -> VOLCANO -> GHOST: neither completed
+  KING -> CHESS -> BOXING -> PENGUIN -> WHALE: neither completed
+  ICE -> SNOW -> SUN -> PEPPER -> SALT: neither completed
+  PARROT -> PIRATE -> TREASURE -> ISLAND -> BRIDGE: both completed
+  SPYGLASS -> SPY -> CASTLE -> BRIDGE -> ISLAND: neither completed
+  DUNE -> DESERT -> SALT -> MARS -> STORM: neither completed
+  PARROT -> CHESS -> CAMERA -> CHEESE -> SNAKE: neither completed
+  SAHARA -> DESERT -> FOX -> SPIDER -> NET: paired completed; held-out did not
+  PIRATE -> STAR -> SNOW -> BEAR -> COOKIE: neither completed
+  DESERT -> SAHARA -> PYRAMID -> TOKYO -> CAMERA: neither completed
+  MOUNTAIN -> EVEREST -> STORM -> CAMERA -> GUITAR: neither completed
+  PIRATE -> SHARK -> DIAMOND -> CAVE -> CANDLE: neither completed
+  DESERT -> CAIRO -> EGYPT -> SUN -> SALT: neither completed
+  SEA -> PIRATE -> ISLAND -> CAVE -> BAT: paired completed; held-out did not
+  PARK -> BEAR -> CAMERA -> HOLLYWOOD -> BOXING: neither completed
+  ITALY -> ROME -> VENICE -> CAMERA -> HOLLYWOOD: paired completed; held-out did not
+  PIRATE -> TREASURE -> ISLAND -> VOLCANO -> SUN: paired completed; held-out did not
+  BEACH -> SUN -> STAR -> SPY -> CANDLE: neither completed
+  ITALY -> VENICE -> RIVER -> BOWL -> SUN: paired completed; held-out did not
+  PIRATE -> ISLAND -> VOLCANO -> EAGLE -> HEART: neither completed
+  PIRATE -> EAGLE -> OWL -> BAT -> CRAB: neither completed
+  HONEY -> BEE -> BOTTLE -> MILK -> CHOCOLATE: neither completed
+  CHESS -> KNIGHT -> TRACK -> WHEEL -> SPY: neither completed
+  DESERT -> SAHARA -> EGYPT -> PYRAMID -> CASTLE: both completed
+  ITALY -> ROME -> VENICE -> CHEESE -> TURKEY: neither completed
+  MUSIC -> DRUM -> BELL -> PITCH -> KEY: paired completed; held-out did not
+  FIRE -> VOLCANO -> CAVE -> BAT -> STAR: neither completed
+  ZOO -> LION -> CIRCUS -> CLOWN -> CAKE: both completed
+  ROMANCE -> HEART -> KEY -> CROWN -> CANDLE: neither completed
+  HOT -> VOLCANO -> THUNDER -> SNOW -> GLASS: neither completed
+  CASTLE -> CROWN -> COURT -> HORSE -> BRIDGE: neither completed
+  DESERT -> SAHARA -> CAIRO -> MUMMY -> CASTLE: paired completed; held-out did not
+  DESERT -> SAHARA -> EGYPT -> PYRAMID -> CAKE: neither completed
+  PIRATE -> ALASKA -> SNOW -> HORSE -> RING: neither completed
+  SPACE -> MOON -> SUN -> STAR -> MAP: neither completed
+  BIRTHDAY -> CANDLE -> CAKE -> HONEY -> RAIN: neither completed
+  ANIMAL -> BEAR -> HONEY -> CAKE -> COOKIE: both completed
+  DESERT -> CAIRO -> PYRAMID -> MUMMY -> NINJA: neither completed
+  FROZEN -> SNOW -> RAIN -> TRAIN -> BOTTLE: neither completed
+  DESERT -> CAIRO -> MAP -> STAR -> GHOST: neither completed
+  KINGDOM -> CASTLE -> COURT -> CLOWN -> MIRROR: both completed
+  DESERT -> SAHARA -> CAIRO -> MUMMY -> PIRATE: held-out completed; paired did not
+  CLIMB -> LADDER -> CLOCK -> RING -> GOAL: neither completed
+  STRIPES -> TIGER -> HONEY -> BEE -> DRUM: paired completed; held-out did not
+  MOUNTAIN -> EVEREST -> HORSE -> TRAIN -> SNAKE: neither completed
+  ZOO -> LION -> CROWN -> KEY -> GLASS: neither completed
+  BAKING -> CAKE -> LEMON -> PITCH -> BELL: paired completed; held-out did not
+  FRUIT -> PEACH -> ORANGE -> CHEESE -> BOOK: neither completed
+  ARCTIC -> ICE -> PITCH -> BOXING -> MEDAL: neither completed
+  JEWELRY -> DIAMOND -> RING -> HAND -> ANCHOR: neither completed
+  MOUNTAIN -> EVEREST -> HORSE -> CIRCUS -> CANDLE: neither completed
+  ICE -> SKATE -> RACKET -> COURT -> HEART: neither completed
+  PARK -> HONEY -> BOWL -> CORN -> APPLE: neither completed
+  DESSERT -> CAKE -> CANDLE -> PIANO -> GUITAR: held-out completed; paired did not
+  CAKE -> CHOCOLATE -> MILK -> SNOW -> WHALE: neither completed
+  BEAR -> COOKIE -> ROBOT -> GHOST -> WHEEL: neither completed
+  ASCEND -> EVEREST -> CAVE -> CANDLE -> PIANO: neither completed
+  HOT -> SUN -> STAR -> MARS -> VOLCANO: both completed
+  SWEET -> CHOCOLATE -> CANDLE -> PIANO -> FOREST: neither completed
+  ANIMAL -> SPIDER -> FOX -> SNAKE -> CAVE: neither completed
+  PIRATE -> TREASURE -> MAP -> STAR -> CROWN: neither completed
+  SHIP -> PIRATE -> GHOST -> MUMMY -> SPAIN: neither completed
+  CASINO -> VEGAS -> CHESS -> HORSE -> TRACK: neither completed
+  ANIMAL -> BEAR -> SNAKE -> DRAGON -> KNIGHT: neither completed
+  ANIMAL -> BEAR -> BEE -> OWL -> APPLE: neither completed
+  PLANET -> MARS -> RIVER -> SNAKE -> TIGER: neither completed
+
+Matched chains: 99
+Paired-only completions: 11
+Held-out-only completions: 2
+Both completed or neither completed: 86
+
+========== LINK DIFFICULTY ==========
+ANIMAL -> BEAR: 3 mistakes out of 9 guesses (33.3% mistake rate)
+ANIMAL -> SPIDER: 2 mistakes out of 4 guesses (50.0% mistake rate)
+APPLE -> EYE: 0 mistakes out of 1 guesses (0.0% mistake rate)
+ARCTIC -> BEAR: 4 mistakes out of 6 guesses (66.7% mistake rate)
+ARCTIC -> ICE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ASCEND -> EVEREST: 2 mistakes out of 4 guesses (50.0% mistake rate)
+BAKING -> CAKE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+BAT -> STAR: 5 mistakes out of 5 guesses (100.0% mistake rate)
+BEACH -> SUN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+BEAR -> BEE: 4 mistakes out of 6 guesses (66.7% mistake rate)
+BEAR -> CAMERA: 3 mistakes out of 3 guesses (100.0% mistake rate)
+BEAR -> CHEESE: 2 mistakes out of 2 guesses (100.0% mistake rate)
+BEAR -> COOKIE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+BEAR -> HONEY: 0 mistakes out of 2 guesses (0.0% mistake rate)
+BEAR -> SNAKE: 3 mistakes out of 3 guesses (100.0% mistake rate)
+BEE -> BOTTLE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+BEE -> DRUM: 1 mistakes out of 2 guesses (50.0% mistake rate)
+BEE -> NET: 5 mistakes out of 6 guesses (83.3% mistake rate)
+BEE -> OWL: 1 mistakes out of 2 guesses (50.0% mistake rate)
+BEE -> STAR: 6 mistakes out of 6 guesses (100.0% mistake rate)
+BELL -> PITCH: 0 mistakes out of 1 guesses (0.0% mistake rate)
+BIRTHDAY -> CANDLE: 1 mistakes out of 3 guesses (33.3% mistake rate)
+BOARD -> CHESS: 0 mistakes out of 2 guesses (0.0% mistake rate)
+BOAT -> RIVER: 2 mistakes out of 4 guesses (50.0% mistake rate)
+BOOK -> PITCH: 6 mistakes out of 6 guesses (100.0% mistake rate)
+BOWL -> SUN: 0 mistakes out of 1 guesses (0.0% mistake rate)
+BOXING -> PENGUIN: 1 mistakes out of 1 guesses (100.0% mistake rate)
+BOXING -> RACKET: 1 mistakes out of 2 guesses (50.0% mistake rate)
+BREAD -> COOKIE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+BREAD -> SALT: 3 mistakes out of 5 guesses (60.0% mistake rate)
+CAIRO -> EGYPT: 2 mistakes out of 2 guesses (100.0% mistake rate)
+CAIRO -> MAP: 1 mistakes out of 2 guesses (50.0% mistake rate)
+CAIRO -> MUMMY: 2 mistakes out of 6 guesses (33.3% mistake rate)
+CAIRO -> PYRAMID: 2 mistakes out of 2 guesses (100.0% mistake rate)
+CAKE -> CANDLE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CAKE -> CHOCOLATE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CAKE -> COOKIE: 1 mistakes out of 3 guesses (33.3% mistake rate)
+CAKE -> HONEY: 0 mistakes out of 1 guesses (0.0% mistake rate)
+CAKE -> LEMON: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CAMERA -> HOLLYWOOD: 1 mistakes out of 2 guesses (50.0% mistake rate)
+CANDLE -> CAKE: 2 mistakes out of 3 guesses (66.7% mistake rate)
+CANDLE -> CASTLE: 4 mistakes out of 4 guesses (100.0% mistake rate)
+CANDLE -> PIANO: 5 mistakes out of 6 guesses (83.3% mistake rate)
+CASINO -> VEGAS: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CASTLE -> COURT: 3 mistakes out of 5 guesses (60.0% mistake rate)
+CASTLE -> CROWN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CASTLE -> KEY: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CASTLE -> KNIGHT: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CAVE -> BAT: 0 mistakes out of 3 guesses (0.0% mistake rate)
+CAVE -> VOLCANO: 0 mistakes out of 1 guesses (0.0% mistake rate)
+CHEESE -> BOOK: 3 mistakes out of 3 guesses (100.0% mistake rate)
+CHESS -> BOXING: 3 mistakes out of 4 guesses (75.0% mistake rate)
+CHESS -> KNIGHT: 0 mistakes out of 6 guesses (0.0% mistake rate)
+CHOCOLATE -> CANDLE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+CHOCOLATE -> MILK: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CIRCUS -> CLOWN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CLIMB -> LADDER: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CLOWN -> CAKE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CLOWN -> MIRROR: 0 mistakes out of 2 guesses (0.0% mistake rate)
+COOKIE -> APPLE: 5 mistakes out of 6 guesses (83.3% mistake rate)
+COOKIE -> CHOCOLATE: 3 mistakes out of 3 guesses (100.0% mistake rate)
+COURT -> CLOWN: 1 mistakes out of 3 guesses (33.3% mistake rate)
+COURT -> HORSE: 4 mistakes out of 5 guesses (80.0% mistake rate)
+COURT -> SKATE: 3 mistakes out of 3 guesses (100.0% mistake rate)
+CROWN -> COURT: 0 mistakes out of 2 guesses (0.0% mistake rate)
+CROWN -> ISLAND: 6 mistakes out of 6 guesses (100.0% mistake rate)
+CROWN -> KEY: 5 mistakes out of 5 guesses (100.0% mistake rate)
+DESERT -> CAIRO: 10 mistakes out of 14 guesses (71.4% mistake rate)
+DESERT -> FOX: 2 mistakes out of 4 guesses (50.0% mistake rate)
+DESERT -> SAHARA: 0 mistakes out of 10 guesses (0.0% mistake rate)
+DESERT -> SALT: 4 mistakes out of 5 guesses (80.0% mistake rate)
+DESERT -> VOLCANO: 5 mistakes out of 6 guesses (83.3% mistake rate)
+DESSERT -> CAKE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+DIAMOND -> RING: 2 mistakes out of 3 guesses (66.7% mistake rate)
+DRUM -> BELL: 1 mistakes out of 2 guesses (50.0% mistake rate)
+DUNE -> DESERT: 0 mistakes out of 2 guesses (0.0% mistake rate)
+EGYPT -> PYRAMID: 0 mistakes out of 4 guesses (0.0% mistake rate)
+EVEREST -> CAVE: 4 mistakes out of 4 guesses (100.0% mistake rate)
+EVEREST -> HORSE: 12 mistakes out of 12 guesses (100.0% mistake rate)
+EVEREST -> STORM: 5 mistakes out of 6 guesses (83.3% mistake rate)
+EYE -> GLASS: 3 mistakes out of 5 guesses (60.0% mistake rate)
+EYE -> SPIDER: 0 mistakes out of 1 guesses (0.0% mistake rate)
+FIRE -> VOLCANO: 0 mistakes out of 2 guesses (0.0% mistake rate)
+FOREST -> LION: 2 mistakes out of 3 guesses (66.7% mistake rate)
+FOREST -> STORM: 5 mistakes out of 5 guesses (100.0% mistake rate)
+FOX -> SNAKE: 1 mistakes out of 1 guesses (100.0% mistake rate)
+FOX -> SPIDER: 3 mistakes out of 4 guesses (75.0% mistake rate)
+FROZEN -> SNOW: 0 mistakes out of 2 guesses (0.0% mistake rate)
+FRUIT -> PEACH: 1 mistakes out of 3 guesses (33.3% mistake rate)
+GHOST -> MUMMY: 1 mistakes out of 3 guesses (33.3% mistake rate)
+GLASS -> PYRAMID: 2 mistakes out of 2 guesses (100.0% mistake rate)
+HAND -> ANCHOR: 3 mistakes out of 3 guesses (100.0% mistake rate)
+HEART -> KEY: 1 mistakes out of 3 guesses (33.3% mistake rate)
+HEART -> SALT: 5 mistakes out of 5 guesses (100.0% mistake rate)
+HONEY -> BEE: 0 mistakes out of 5 guesses (0.0% mistake rate)
+HONEY -> CAKE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+HONEY -> RAIN: 3 mistakes out of 3 guesses (100.0% mistake rate)
+HORSE -> BRIDGE: 2 mistakes out of 2 guesses (100.0% mistake rate)
+HORSE -> EAGLE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+HOT -> SUN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+HOT -> VOLCANO: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ICE -> PITCH: 6 mistakes out of 6 guesses (100.0% mistake rate)
+ICE -> SKATE: 0 mistakes out of 4 guesses (0.0% mistake rate)
+ICE -> SNOW: 0 mistakes out of 4 guesses (0.0% mistake rate)
+INSECT -> BEE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ISLAND -> BRIDGE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ISLAND -> CAVE: 3 mistakes out of 4 guesses (75.0% mistake rate)
+ISLAND -> OCEAN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ISLAND -> SHARK: 4 mistakes out of 4 guesses (100.0% mistake rate)
+ISLAND -> VOLCANO: 2 mistakes out of 6 guesses (33.3% mistake rate)
+ITALY -> PIZZA: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ITALY -> ROME: 0 mistakes out of 4 guesses (0.0% mistake rate)
+ITALY -> VENICE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+JEWELRY -> DIAMOND: 1 mistakes out of 3 guesses (33.3% mistake rate)
+KEY -> CROWN: 5 mistakes out of 5 guesses (100.0% mistake rate)
+KING -> CASTLE: 2 mistakes out of 4 guesses (50.0% mistake rate)
+KING -> CHESS: 2 mistakes out of 4 guesses (50.0% mistake rate)
+KINGDOM -> CASTLE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+KNIGHT -> CASTLE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+KNIGHT -> CHESS: 4 mistakes out of 4 guesses (100.0% mistake rate)
+KNIGHT -> HORSE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+KNIGHT -> PITCH: 6 mistakes out of 6 guesses (100.0% mistake rate)
+KNIGHT -> TRACK: 5 mistakes out of 6 guesses (83.3% mistake rate)
+LADDER -> CLOCK: 6 mistakes out of 6 guesses (100.0% mistake rate)
+LEMON -> PITCH: 5 mistakes out of 6 guesses (83.3% mistake rate)
+LION -> CIRCUS: 0 mistakes out of 2 guesses (0.0% mistake rate)
+LION -> CROWN: 1 mistakes out of 3 guesses (33.3% mistake rate)
+LION -> HONEY: 3 mistakes out of 3 guesses (100.0% mistake rate)
+MAP -> CAVE: 3 mistakes out of 4 guesses (75.0% mistake rate)
+MAP -> ISLAND: 3 mistakes out of 5 guesses (60.0% mistake rate)
+MAP -> STAR: 1 mistakes out of 4 guesses (25.0% mistake rate)
+MAP -> TREASURE: 4 mistakes out of 4 guesses (100.0% mistake rate)
+MARS -> RIVER: 6 mistakes out of 6 guesses (100.0% mistake rate)
+MARS -> VOLCANO: 2 mistakes out of 4 guesses (50.0% mistake rate)
+MEDAL -> TIGER: 5 mistakes out of 5 guesses (100.0% mistake rate)
+MEDIEVAL -> CROWN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+MILK -> SNOW: 1 mistakes out of 3 guesses (33.3% mistake rate)
+MIRROR -> EYE: 0 mistakes out of 1 guesses (0.0% mistake rate)
+MOON -> SUN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+MOUNTAIN -> EVEREST: 0 mistakes out of 6 guesses (0.0% mistake rate)
+MUMMY -> CASTLE: 5 mistakes out of 6 guesses (83.3% mistake rate)
+MUMMY -> PIRATE: 2 mistakes out of 3 guesses (66.7% mistake rate)
+MUMMY -> SPAIN: 4 mistakes out of 4 guesses (100.0% mistake rate)
+MUSIC -> DRUM: 3 mistakes out of 5 guesses (60.0% mistake rate)
+NET -> BOXING: 1 mistakes out of 1 guesses (100.0% mistake rate)
+NIGHT -> OWL: 1 mistakes out of 7 guesses (14.3% mistake rate)
+OCEAN -> ISLAND: 2 mistakes out of 4 guesses (50.0% mistake rate)
+OCEAN -> SHARK: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ORANGE -> CHEESE: 0 mistakes out of 1 guesses (0.0% mistake rate)
+OWL -> APPLE: 1 mistakes out of 1 guesses (100.0% mistake rate)
+OWL -> EYE: 1 mistakes out of 3 guesses (33.3% mistake rate)
+OWL -> FOREST: 1 mistakes out of 5 guesses (20.0% mistake rate)
+PARK -> BEAR: 3 mistakes out of 5 guesses (60.0% mistake rate)
+PARK -> HONEY: 6 mistakes out of 6 guesses (100.0% mistake rate)
+PARROT -> CHESS: 6 mistakes out of 6 guesses (100.0% mistake rate)
+PARROT -> PIRATE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+PEACH -> ORANGE: 2 mistakes out of 3 guesses (66.7% mistake rate)
+PEPPER -> COOKIE: 3 mistakes out of 3 guesses (100.0% mistake rate)
+PIANO -> GUITAR: 0 mistakes out of 1 guesses (0.0% mistake rate)
+PIRATE -> ALASKA: 6 mistakes out of 6 guesses (100.0% mistake rate)
+PIRATE -> EAGLE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+PIRATE -> GHOST: 1 mistakes out of 3 guesses (33.3% mistake rate)
+PIRATE -> ISLAND: 0 mistakes out of 4 guesses (0.0% mistake rate)
+PIRATE -> MAP: 2 mistakes out of 6 guesses (33.3% mistake rate)
+PIRATE -> SHARK: 4 mistakes out of 6 guesses (66.7% mistake rate)
+PIRATE -> STAR: 4 mistakes out of 5 guesses (80.0% mistake rate)
+PIRATE -> TIGER: 6 mistakes out of 6 guesses (100.0% mistake rate)
+PIRATE -> TREASURE: 0 mistakes out of 6 guesses (0.0% mistake rate)
+PITCH -> BELL: 0 mistakes out of 1 guesses (0.0% mistake rate)
+PITCH -> KEY: 0 mistakes out of 1 guesses (0.0% mistake rate)
+PIZZA -> ORANGE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+PLANET -> MARS: 0 mistakes out of 2 guesses (0.0% mistake rate)
+PYRAMID -> CAKE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+PYRAMID -> CASTLE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+PYRAMID -> TOKYO: 6 mistakes out of 6 guesses (100.0% mistake rate)
+RACKET -> COURT: 2 mistakes out of 3 guesses (66.7% mistake rate)
+RACKET -> EGYPT: 3 mistakes out of 3 guesses (100.0% mistake rate)
+RAIN -> CORN: 4 mistakes out of 4 guesses (100.0% mistake rate)
+RAIN -> ROSE: 4 mistakes out of 5 guesses (80.0% mistake rate)
+RAIN -> TRAIN: 1 mistakes out of 3 guesses (33.3% mistake rate)
+RING -> HAND: 0 mistakes out of 1 guesses (0.0% mistake rate)
+RIVER -> BOWL: 4 mistakes out of 5 guesses (80.0% mistake rate)
+RIVER -> SNOW: 0 mistakes out of 2 guesses (0.0% mistake rate)
+ROMANCE -> CANDLE: 2 mistakes out of 4 guesses (50.0% mistake rate)
+ROMANCE -> HEART: 1 mistakes out of 5 guesses (20.0% mistake rate)
+ROME -> VENICE: 0 mistakes out of 4 guesses (0.0% mistake rate)
+ROSE -> BRIDGE: 1 mistakes out of 1 guesses (100.0% mistake rate)
+SAHARA -> CAIRO: 0 mistakes out of 4 guesses (0.0% mistake rate)
+SAHARA -> DESERT: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SAHARA -> EGYPT: 0 mistakes out of 4 guesses (0.0% mistake rate)
+SAHARA -> PYRAMID: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SAILOR -> PIRATE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SALT -> MARS: 2 mistakes out of 2 guesses (100.0% mistake rate)
+SALT -> PEPPER: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SAND -> DESERT: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SANDWICH -> BREAD: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SEA -> OCEAN: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SEA -> PIRATE: 1 mistakes out of 3 guesses (33.3% mistake rate)
+SHADOW -> MIRROR: 5 mistakes out of 6 guesses (83.3% mistake rate)
+SHARK -> DIAMOND: 2 mistakes out of 2 guesses (100.0% mistake rate)
+SHARK -> WHALE: 1 mistakes out of 5 guesses (20.0% mistake rate)
+SHERLOCK -> HOLLYWOOD: 6 mistakes out of 6 guesses (100.0% mistake rate)
+SHIP -> PIRATE: 0 mistakes out of 4 guesses (0.0% mistake rate)
+SKATE -> BOXING: 2 mistakes out of 4 guesses (50.0% mistake rate)
+SKATE -> RACKET: 6 mistakes out of 6 guesses (100.0% mistake rate)
+SNOW -> CANDLE: 4 mistakes out of 4 guesses (100.0% mistake rate)
+SNOW -> GLASS: 1 mistakes out of 1 guesses (100.0% mistake rate)
+SNOW -> RAIN: 1 mistakes out of 5 guesses (20.0% mistake rate)
+SNOW -> SUN: 5 mistakes out of 6 guesses (83.3% mistake rate)
+SNOW -> WHALE: 5 mistakes out of 5 guesses (100.0% mistake rate)
+SPACE -> MOON: 2 mistakes out of 4 guesses (50.0% mistake rate)
+SPIDER -> BOTTLE: 1 mistakes out of 1 guesses (100.0% mistake rate)
+SPIDER -> FOX: 3 mistakes out of 4 guesses (75.0% mistake rate)
+SPIDER -> NET: 0 mistakes out of 1 guesses (0.0% mistake rate)
+SPORT -> MEDAL: 1 mistakes out of 3 guesses (33.3% mistake rate)
+SPY -> CANDLE: 1 mistakes out of 1 guesses (100.0% mistake rate)
+SPY -> CASTLE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+SPYGLASS -> SPY: 0 mistakes out of 2 guesses (0.0% mistake rate)
+STAR -> CROWN: 5 mistakes out of 5 guesses (100.0% mistake rate)
+STAR -> GHOST: 3 mistakes out of 3 guesses (100.0% mistake rate)
+STAR -> MARS: 1 mistakes out of 3 guesses (33.3% mistake rate)
+STAR -> SNOW: 2 mistakes out of 2 guesses (100.0% mistake rate)
+STAR -> SPY: 5 mistakes out of 6 guesses (83.3% mistake rate)
+STORM -> CAMERA: 1 mistakes out of 1 guesses (100.0% mistake rate)
+STRIPES -> TIGER: 0 mistakes out of 4 guesses (0.0% mistake rate)
+SUN -> PEPPER: 1 mistakes out of 1 guesses (100.0% mistake rate)
+SUN -> STAR: 4 mistakes out of 8 guesses (50.0% mistake rate)
+SUNSHINE -> RAIN: 2 mistakes out of 4 guesses (50.0% mistake rate)
+SWEET -> CHOCOLATE: 0 mistakes out of 2 guesses (0.0% mistake rate)
+SWEET -> COOKIE: 3 mistakes out of 5 guesses (60.0% mistake rate)
+TENNIS -> RACKET: 1 mistakes out of 3 guesses (33.3% mistake rate)
+THUNDER -> SNOW: 1 mistakes out of 2 guesses (50.0% mistake rate)
+TIGER -> HONEY: 4 mistakes out of 5 guesses (80.0% mistake rate)
+TIGER -> SHARK: 0 mistakes out of 2 guesses (0.0% mistake rate)
+TRACK -> WHEEL: 1 mistakes out of 1 guesses (100.0% mistake rate)
+TRAIN -> BOTTLE: 5 mistakes out of 5 guesses (100.0% mistake rate)
+TREASURE -> ISLAND: 0 mistakes out of 4 guesses (0.0% mistake rate)
+TREASURE -> MAP: 0 mistakes out of 4 guesses (0.0% mistake rate)
+VEGAS -> CHESS: 6 mistakes out of 6 guesses (100.0% mistake rate)
+VENICE -> CAMERA: 3 mistakes out of 5 guesses (60.0% mistake rate)
+VENICE -> CHEESE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+VENICE -> RIVER: 1 mistakes out of 3 guesses (33.3% mistake rate)
+VOLCANO -> CAVE: 1 mistakes out of 3 guesses (33.3% mistake rate)
+VOLCANO -> EAGLE: 6 mistakes out of 6 guesses (100.0% mistake rate)
+VOLCANO -> MARS: 1 mistakes out of 1 guesses (100.0% mistake rate)
+VOLCANO -> SUN: 3 mistakes out of 4 guesses (75.0% mistake rate)
+VOLCANO -> THUNDER: 4 mistakes out of 5 guesses (80.0% mistake rate)
+WHALE -> DRAGON: 5 mistakes out of 5 guesses (100.0% mistake rate)
+WHALE -> OWL: 6 mistakes out of 6 guesses (100.0% mistake rate)
+ZOO -> LION: 0 mistakes out of 4 guesses (0.0% mistake rate)
+
+========== RESULTS BY LINK POSITION ==========
+Link 1: 180 correct, 110 wrong (37.9% wrong)
+Link 2: 105 correct, 224 wrong (68.1% wrong)
+Link 3: 61 correct, 127 wrong (67.6% wrong)
+Link 4: 29 correct, 77 wrong (72.6% wrong)
+
+========== INDIVIDUAL GAMES ==========
+Batch 1, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=BOOK -> PITCH -> JAZZ -> MUMMY -> AMAZON
+Batch 1, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=BOOK -> PITCH -> JAZZ -> MUMMY -> AMAZON
+Batch 1, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=TREASURE -> MAP -> ISLAND -> OCEAN -> SHARK
+Batch 1, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=TREASURE -> MAP -> ISLAND -> OCEAN -> SHARK
+Batch 1, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=NIGHT -> OWL -> FOREST -> LION -> HONEY
+Batch 1, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=NIGHT -> OWL -> FOREST -> LION -> HONEY
+Batch 1, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=TENNIS -> RACKET -> COURT -> SKATE -> BOOK
+Batch 1, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=TENNIS -> RACKET -> COURT -> SKATE -> BOOK
+Batch 1, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SHADOW -> MIRROR -> EYE -> SPIDER -> BOTTLE
+Batch 1, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SHADOW -> MIRROR -> EYE -> SPIDER -> BOTTLE
+Batch 1, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=STRIPES -> TIGER -> SHARK -> WHALE -> DRAGON
+Batch 1, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=STRIPES -> TIGER -> SHARK -> WHALE -> DRAGON
+Batch 1, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=NIGHT -> OWL -> FOREST -> STORM -> CASTLE
+Batch 1, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=NIGHT -> OWL -> FOREST -> STORM -> CASTLE
+Batch 1, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PIRATE -> MAP -> TREASURE -> CAVE -> DRAGON
+Batch 1, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> MAP -> TREASURE -> CAVE -> DRAGON
+Batch 1, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=SHIP -> PIRATE -> MAP -> CAVE -> VOLCANO
+Batch 1, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SHIP -> PIRATE -> MAP -> CAVE -> VOLCANO
+Batch 1, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=BOARD -> CHESS -> KNIGHT -> CASTLE -> KEY
+Batch 1, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=BOARD -> CHESS -> KNIGHT -> CASTLE -> KEY
+Batch 2, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SAILOR -> PIRATE -> TIGER -> CIRCUS -> LION
+Batch 2, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SAILOR -> PIRATE -> TIGER -> CIRCUS -> LION
+Batch 2, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=BOAT -> RIVER -> SNOW -> CANDLE -> CAKE
+Batch 2, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=BOAT -> RIVER -> SNOW -> CANDLE -> CAKE
+Batch 2, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=KING -> CASTLE -> KNIGHT -> CHESS -> TEAM
+Batch 2, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=KING -> CASTLE -> KNIGHT -> CHESS -> TEAM
+Batch 2, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=SANDWICH -> BREAD -> COOKIE -> APPLE -> EYE
+Batch 2, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SANDWICH -> BREAD -> COOKIE -> APPLE -> EYE
+Batch 2, Game 5, Role=None, Model=None, Status=skipped, Result=skipped, Chain=
+Batch 2, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=HONEY -> BEE -> STAR -> ROCKET -> TRAIN
+Batch 2, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=HONEY -> BEE -> STAR -> ROCKET -> TRAIN
+Batch 2, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ROMANCE -> CANDLE -> CASTLE -> KNIGHT -> MEDAL
+Batch 2, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ROMANCE -> CANDLE -> CASTLE -> KNIGHT -> MEDAL
+Batch 2, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SPORT -> MEDAL -> TIGER -> LION -> CAKE
+Batch 2, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SPORT -> MEDAL -> TIGER -> LION -> CAKE
+Batch 2, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ICE -> SNOW -> RAIN -> ROSE -> BRIDGE
+Batch 2, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ICE -> SNOW -> RAIN -> ROSE -> BRIDGE
+Batch 2, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=BREAD -> SALT -> PEPPER -> COOKIE -> CAKE
+Batch 2, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=BREAD -> SALT -> PEPPER -> COOKIE -> CAKE
+Batch 3, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ICE -> SKATE -> BOXING -> RACKET -> EGYPT
+Batch 3, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ICE -> SKATE -> BOXING -> RACKET -> EGYPT
+Batch 3, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ROMANCE -> HEART -> SALT -> BRAZIL -> PARIS
+Batch 3, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ROMANCE -> HEART -> SALT -> BRAZIL -> PARIS
+Batch 3, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SWEET -> COOKIE -> CHOCOLATE -> CANDLE -> BELL
+Batch 3, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SWEET -> COOKIE -> CHOCOLATE -> CANDLE -> BELL
+Batch 3, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ARCTIC -> BEAR -> CHEESE -> COOKIE -> CHOCOLATE
+Batch 3, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ARCTIC -> BEAR -> CHEESE -> COOKIE -> CHOCOLATE
+Batch 3, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SUNSHINE -> RAIN -> CORN -> WHEEL -> BRIDGE
+Batch 3, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SUNSHINE -> RAIN -> CORN -> WHEEL -> BRIDGE
+Batch 3, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SHERLOCK -> HOLLYWOOD -> TRAIN -> CLOCK -> BOOK
+Batch 3, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SHERLOCK -> HOLLYWOOD -> TRAIN -> CLOCK -> BOOK
+Batch 3, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ITALY -> PIZZA -> ORANGE -> JAZZ -> PIANO
+Batch 3, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ITALY -> PIZZA -> ORANGE -> JAZZ -> PIANO
+Batch 3, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SHARK -> WHALE -> OWL -> BEAR -> SPY
+Batch 3, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SHARK -> WHALE -> OWL -> BEAR -> SPY
+Batch 3, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=CHESS -> KNIGHT -> PITCH -> GOAL -> MEDAL
+Batch 3, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=CHESS -> KNIGHT -> PITCH -> GOAL -> MEDAL
+Batch 3, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SAND -> DESERT -> VOLCANO -> MARS -> TRACK
+Batch 3, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SAND -> DESERT -> VOLCANO -> MARS -> TRACK
+Batch 4, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SEA -> OCEAN -> ISLAND -> SHARK -> FOX
+Batch 4, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SEA -> OCEAN -> ISLAND -> SHARK -> FOX
+Batch 4, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=INSECT -> BEE -> NET -> BOXING -> SPAIN
+Batch 4, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=INSECT -> BEE -> NET -> BOXING -> SPAIN
+Batch 4, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=KNIGHT -> HORSE -> EAGLE -> MIRROR -> GHOST
+Batch 4, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=KNIGHT -> HORSE -> EAGLE -> MIRROR -> GHOST
+Batch 4, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=NIGHT -> OWL -> EYE -> GLASS -> PYRAMID
+Batch 4, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=NIGHT -> OWL -> EYE -> GLASS -> PYRAMID
+Batch 4, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=MEDIEVAL -> CROWN -> ISLAND -> VOLCANO -> GHOST
+Batch 4, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=MEDIEVAL -> CROWN -> ISLAND -> VOLCANO -> GHOST
+Batch 4, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=KING -> CHESS -> BOXING -> PENGUIN -> WHALE
+Batch 4, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=KING -> CHESS -> BOXING -> PENGUIN -> WHALE
+Batch 4, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ICE -> SNOW -> SUN -> PEPPER -> SALT
+Batch 4, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ICE -> SNOW -> SUN -> PEPPER -> SALT
+Batch 4, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=PARROT -> PIRATE -> TREASURE -> ISLAND -> BRIDGE
+Batch 4, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=PARROT -> PIRATE -> TREASURE -> ISLAND -> BRIDGE
+Batch 4, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SPYGLASS -> SPY -> CASTLE -> BRIDGE -> ISLAND
+Batch 4, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SPYGLASS -> SPY -> CASTLE -> BRIDGE -> ISLAND
+Batch 4, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DUNE -> DESERT -> SALT -> MARS -> STORM
+Batch 4, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=DUNE -> DESERT -> SALT -> MARS -> STORM
+Batch 5, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PARROT -> CHESS -> CAMERA -> CHEESE -> SNAKE
+Batch 5, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PARROT -> CHESS -> CAMERA -> CHEESE -> SNAKE
+Batch 5, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=SAHARA -> DESERT -> FOX -> SPIDER -> NET
+Batch 5, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SAHARA -> DESERT -> FOX -> SPIDER -> NET
+Batch 5, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PIRATE -> STAR -> SNOW -> BEAR -> COOKIE
+Batch 5, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> STAR -> SNOW -> BEAR -> COOKIE
+Batch 5, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DESERT -> SAHARA -> PYRAMID -> TOKYO -> CAMERA
+Batch 5, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=DESERT -> SAHARA -> PYRAMID -> TOKYO -> CAMERA
+Batch 5, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=MOUNTAIN -> EVEREST -> STORM -> CAMERA -> GUITAR
+Batch 5, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=MOUNTAIN -> EVEREST -> STORM -> CAMERA -> GUITAR
+Batch 5, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PIRATE -> SHARK -> DIAMOND -> CAVE -> CANDLE
+Batch 5, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> SHARK -> DIAMOND -> CAVE -> CANDLE
+Batch 5, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DESERT -> CAIRO -> EGYPT -> SUN -> SALT
+Batch 5, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=DESERT -> CAIRO -> EGYPT -> SUN -> SALT
+Batch 5, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=SEA -> PIRATE -> ISLAND -> CAVE -> BAT
+Batch 5, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SEA -> PIRATE -> ISLAND -> CAVE -> BAT
+Batch 5, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PARK -> BEAR -> CAMERA -> HOLLYWOOD -> BOXING
+Batch 5, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PARK -> BEAR -> CAMERA -> HOLLYWOOD -> BOXING
+Batch 5, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=ITALY -> ROME -> VENICE -> CAMERA -> HOLLYWOOD
+Batch 5, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ITALY -> ROME -> VENICE -> CAMERA -> HOLLYWOOD
+Batch 6, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=PIRATE -> TREASURE -> ISLAND -> VOLCANO -> SUN
+Batch 6, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> TREASURE -> ISLAND -> VOLCANO -> SUN
+Batch 6, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=BEACH -> SUN -> STAR -> SPY -> CANDLE
+Batch 6, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=BEACH -> SUN -> STAR -> SPY -> CANDLE
+Batch 6, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=ITALY -> VENICE -> RIVER -> BOWL -> SUN
+Batch 6, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ITALY -> VENICE -> RIVER -> BOWL -> SUN
+Batch 6, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PIRATE -> ISLAND -> VOLCANO -> EAGLE -> HEART
+Batch 6, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> ISLAND -> VOLCANO -> EAGLE -> HEART
+Batch 6, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PIRATE -> EAGLE -> OWL -> BAT -> CRAB
+Batch 6, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> EAGLE -> OWL -> BAT -> CRAB
+Batch 6, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=HONEY -> BEE -> BOTTLE -> MILK -> CHOCOLATE
+Batch 6, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=HONEY -> BEE -> BOTTLE -> MILK -> CHOCOLATE
+Batch 6, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=CHESS -> KNIGHT -> TRACK -> WHEEL -> SPY
+Batch 6, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=CHESS -> KNIGHT -> TRACK -> WHEEL -> SPY
+Batch 6, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=DESERT -> SAHARA -> EGYPT -> PYRAMID -> CASTLE
+Batch 6, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=DESERT -> SAHARA -> EGYPT -> PYRAMID -> CASTLE
+Batch 6, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ITALY -> ROME -> VENICE -> CHEESE -> TURKEY
+Batch 6, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ITALY -> ROME -> VENICE -> CHEESE -> TURKEY
+Batch 6, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=MUSIC -> DRUM -> BELL -> PITCH -> KEY
+Batch 6, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=MUSIC -> DRUM -> BELL -> PITCH -> KEY
+Batch 7, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=FIRE -> VOLCANO -> CAVE -> BAT -> STAR
+Batch 7, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=FIRE -> VOLCANO -> CAVE -> BAT -> STAR
+Batch 7, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=ZOO -> LION -> CIRCUS -> CLOWN -> CAKE
+Batch 7, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=ZOO -> LION -> CIRCUS -> CLOWN -> CAKE
+Batch 7, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ROMANCE -> HEART -> KEY -> CROWN -> CANDLE
+Batch 7, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ROMANCE -> HEART -> KEY -> CROWN -> CANDLE
+Batch 7, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=HOT -> VOLCANO -> THUNDER -> SNOW -> GLASS
+Batch 7, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=HOT -> VOLCANO -> THUNDER -> SNOW -> GLASS
+Batch 7, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=CASTLE -> CROWN -> COURT -> HORSE -> BRIDGE
+Batch 7, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=CASTLE -> CROWN -> COURT -> HORSE -> BRIDGE
+Batch 7, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=DESERT -> SAHARA -> CAIRO -> MUMMY -> CASTLE
+Batch 7, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=DESERT -> SAHARA -> CAIRO -> MUMMY -> CASTLE
+Batch 7, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DESERT -> SAHARA -> EGYPT -> PYRAMID -> CAKE
+Batch 7, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=DESERT -> SAHARA -> EGYPT -> PYRAMID -> CAKE
+Batch 7, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PIRATE -> ALASKA -> SNOW -> HORSE -> RING
+Batch 7, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> ALASKA -> SNOW -> HORSE -> RING
+Batch 7, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SPACE -> MOON -> SUN -> STAR -> MAP
+Batch 7, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SPACE -> MOON -> SUN -> STAR -> MAP
+Batch 7, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=BIRTHDAY -> CANDLE -> CAKE -> HONEY -> RAIN
+Batch 7, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=BIRTHDAY -> CANDLE -> CAKE -> HONEY -> RAIN
+Batch 8, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=ANIMAL -> BEAR -> HONEY -> CAKE -> COOKIE
+Batch 8, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=ANIMAL -> BEAR -> HONEY -> CAKE -> COOKIE
+Batch 8, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DESERT -> CAIRO -> PYRAMID -> MUMMY -> NINJA
+Batch 8, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=DESERT -> CAIRO -> PYRAMID -> MUMMY -> NINJA
+Batch 8, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=FROZEN -> SNOW -> RAIN -> TRAIN -> BOTTLE
+Batch 8, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=FROZEN -> SNOW -> RAIN -> TRAIN -> BOTTLE
+Batch 8, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DESERT -> CAIRO -> MAP -> STAR -> GHOST
+Batch 8, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=DESERT -> CAIRO -> MAP -> STAR -> GHOST
+Batch 8, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=KINGDOM -> CASTLE -> COURT -> CLOWN -> MIRROR
+Batch 8, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=KINGDOM -> CASTLE -> COURT -> CLOWN -> MIRROR
+Batch 8, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DESERT -> SAHARA -> CAIRO -> MUMMY -> PIRATE
+Batch 8, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=DESERT -> SAHARA -> CAIRO -> MUMMY -> PIRATE
+Batch 8, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=CLIMB -> LADDER -> CLOCK -> RING -> GOAL
+Batch 8, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=CLIMB -> LADDER -> CLOCK -> RING -> GOAL
+Batch 8, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=STRIPES -> TIGER -> HONEY -> BEE -> DRUM
+Batch 8, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=STRIPES -> TIGER -> HONEY -> BEE -> DRUM
+Batch 8, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=MOUNTAIN -> EVEREST -> HORSE -> TRAIN -> SNAKE
+Batch 8, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=MOUNTAIN -> EVEREST -> HORSE -> TRAIN -> SNAKE
+Batch 8, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ZOO -> LION -> CROWN -> KEY -> GLASS
+Batch 8, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ZOO -> LION -> CROWN -> KEY -> GLASS
+Batch 9, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=BAKING -> CAKE -> LEMON -> PITCH -> BELL
+Batch 9, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=BAKING -> CAKE -> LEMON -> PITCH -> BELL
+Batch 9, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=FRUIT -> PEACH -> ORANGE -> CHEESE -> BOOK
+Batch 9, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=FRUIT -> PEACH -> ORANGE -> CHEESE -> BOOK
+Batch 9, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ARCTIC -> ICE -> PITCH -> BOXING -> MEDAL
+Batch 9, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ARCTIC -> ICE -> PITCH -> BOXING -> MEDAL
+Batch 9, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=JEWELRY -> DIAMOND -> RING -> HAND -> ANCHOR
+Batch 9, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=JEWELRY -> DIAMOND -> RING -> HAND -> ANCHOR
+Batch 9, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=MOUNTAIN -> EVEREST -> HORSE -> CIRCUS -> CANDLE
+Batch 9, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=MOUNTAIN -> EVEREST -> HORSE -> CIRCUS -> CANDLE
+Batch 9, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ICE -> SKATE -> RACKET -> COURT -> HEART
+Batch 9, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ICE -> SKATE -> RACKET -> COURT -> HEART
+Batch 9, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PARK -> HONEY -> BOWL -> CORN -> APPLE
+Batch 9, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PARK -> HONEY -> BOWL -> CORN -> APPLE
+Batch 9, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=DESSERT -> CAKE -> CANDLE -> PIANO -> GUITAR
+Batch 9, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=DESSERT -> CAKE -> CANDLE -> PIANO -> GUITAR
+Batch 9, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=CAKE -> CHOCOLATE -> MILK -> SNOW -> WHALE
+Batch 9, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=CAKE -> CHOCOLATE -> MILK -> SNOW -> WHALE
+Batch 9, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=BEAR -> COOKIE -> ROBOT -> GHOST -> WHEEL
+Batch 9, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=BEAR -> COOKIE -> ROBOT -> GHOST -> WHEEL
+Batch 10, Game 1, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ASCEND -> EVEREST -> CAVE -> CANDLE -> PIANO
+Batch 10, Game 1, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ASCEND -> EVEREST -> CAVE -> CANDLE -> PIANO
+Batch 10, Game 2, Role=paired, Model=claude-haiku-5-5, Status=played, Result=chain_complete, Chain=HOT -> SUN -> STAR -> MARS -> VOLCANO
+Batch 10, Game 2, Role=held_out, Model=gpt-5-mini, Status=played, Result=chain_complete, Chain=HOT -> SUN -> STAR -> MARS -> VOLCANO
+Batch 10, Game 3, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SWEET -> CHOCOLATE -> CANDLE -> PIANO -> FOREST
+Batch 10, Game 3, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SWEET -> CHOCOLATE -> CANDLE -> PIANO -> FOREST
+Batch 10, Game 4, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ANIMAL -> SPIDER -> FOX -> SNAKE -> CAVE
+Batch 10, Game 4, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ANIMAL -> SPIDER -> FOX -> SNAKE -> CAVE
+Batch 10, Game 5, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PIRATE -> TREASURE -> MAP -> STAR -> CROWN
+Batch 10, Game 5, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PIRATE -> TREASURE -> MAP -> STAR -> CROWN
+Batch 10, Game 6, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=SHIP -> PIRATE -> GHOST -> MUMMY -> SPAIN
+Batch 10, Game 6, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=SHIP -> PIRATE -> GHOST -> MUMMY -> SPAIN
+Batch 10, Game 7, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=CASINO -> VEGAS -> CHESS -> HORSE -> TRACK
+Batch 10, Game 7, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=CASINO -> VEGAS -> CHESS -> HORSE -> TRACK
+Batch 10, Game 8, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ANIMAL -> BEAR -> SNAKE -> DRAGON -> KNIGHT
+Batch 10, Game 8, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ANIMAL -> BEAR -> SNAKE -> DRAGON -> KNIGHT
+Batch 10, Game 9, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=ANIMAL -> BEAR -> BEE -> OWL -> APPLE
+Batch 10, Game 9, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=ANIMAL -> BEAR -> BEE -> OWL -> APPLE
+Batch 10, Game 10, Role=paired, Model=claude-haiku-5-5, Status=played, Result=out_of_lives, Chain=PLANET -> MARS -> RIVER -> SNAKE -> TIGER
+Batch 10, Game 10, Role=held_out, Model=gpt-5-mini, Status=played, Result=out_of_lives, Chain=PLANET -> MARS -> RIVER -> SNAKE -> TIGER

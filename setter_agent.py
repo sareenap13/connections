@@ -3,11 +3,7 @@ import os
 import anthropic
 from openai import OpenAI
 from dotenv import load_dotenv
-from board_builder import (
-    create_random_board,
-    validate_chain,
-    NUMBER_OF_LINKS_IN_CHAIN,
-)
+from board_builder import create_random_board, validate_chain, NUMBER_OF_LINKS_IN_CHAIN
 from word_pool import word_pool
 
 load_dotenv()

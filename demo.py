@@ -1,8 +1,4 @@
 """Builds demo.html from the experiment logs.
-
-Run:  python build_demo_page.py
-Then open demo.html in a browser. It works offline. Every number comes from the logs.
-Keys on the page: Space / Down arrow = next section, Up arrow = previous, R = reveal.
 """
 import html
 import json

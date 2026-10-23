@@ -92,7 +92,3 @@ OPENAI_API_KEY=your_key_here
 | `run_self_play_batches.py` | The full experiment loop |
 | `analyze_results.py` | Results by guesser and by batch, plus the chart |
 | `demo.py` | Builds the demo page |
-
-## Where the idea came from
-
-My senior thesis used a game to study how people work with an AI teammate. This time, both teammates were AI.
